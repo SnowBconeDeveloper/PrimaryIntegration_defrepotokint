@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sn_sap_data_int_purc_grp_stg" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>client</element>
+            <list_id display_value="sn_sap_data_int_purc_grp_stg" element="NULL" name="sn_sap_data_int_purc_grp_stg" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">55e4afd5c32a611068187addd4013155</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-01 08:34:48</sys_created_on>
+            <sys_id>11e4afd5c32a611068187addd4013156</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-01 08:34:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>erp_source</element>
+            <list_id display_value="sn_sap_data_int_purc_grp_stg" element="NULL" name="sn_sap_data_int_purc_grp_stg" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">55e4afd5c32a611068187addd4013155</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-01 08:34:48</sys_created_on>
+            <sys_id>91e4afd5c32a611068187addd4013156</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-01 08:34:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>purchasing_group</element>
+            <list_id display_value="sn_sap_data_int_purc_grp_stg" element="NULL" name="sn_sap_data_int_purc_grp_stg" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">55e4afd5c32a611068187addd4013155</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-01 08:34:48</sys_created_on>
+            <sys_id>15e4afd5c32a611068187addd4013156</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-01 08:34:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>description_of_purchasing_group</element>
+            <list_id display_value="sn_sap_data_int_purc_grp_stg" element="NULL" name="sn_sap_data_int_purc_grp_stg" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">55e4afd5c32a611068187addd4013155</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-01 08:34:49</sys_created_on>
+            <sys_id>95e4afd5c32a611068187addd4013156</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-01 08:34:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>e_mail_address</element>
+            <list_id display_value="sn_sap_data_int_purc_grp_stg" element="NULL" name="sn_sap_data_int_purc_grp_stg" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">55e4afd5c32a611068187addd4013155</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-01 08:34:49</sys_created_on>
+            <sys_id>19e4afd5c32a611068187addd4013156</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-01 08:34:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>fax_number_of_purchasing_buyer_group</element>
+            <list_id display_value="sn_sap_data_int_purc_grp_stg" element="NULL" name="sn_sap_data_int_purc_grp_stg" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">55e4afd5c32a611068187addd4013155</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-01 08:34:49</sys_created_on>
+            <sys_id>99e4afd5c32a611068187addd4013156</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-01 08:34:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>spool_output_device</element>
+            <list_id display_value="sn_sap_data_int_purc_grp_stg" element="NULL" name="sn_sap_data_int_purc_grp_stg" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">55e4afd5c32a611068187addd4013155</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-01 08:34:49</sys_created_on>
+            <sys_id>1de4afd5c32a611068187addd4013156</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-01 08:34:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>telephone_no_dialling_code_number</element>
+            <list_id display_value="sn_sap_data_int_purc_grp_stg" element="NULL" name="sn_sap_data_int_purc_grp_stg" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">55e4afd5c32a611068187addd4013155</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-01 08:34:49</sys_created_on>
+            <sys_id>9de4afd5c32a611068187addd4013156</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-01 08:34:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>telephone_no_extension</element>
+            <list_id display_value="sn_sap_data_int_purc_grp_stg" element="NULL" name="sn_sap_data_int_purc_grp_stg" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">55e4afd5c32a611068187addd4013155</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-01 08:34:49</sys_created_on>
+            <sys_id>11e4afd5c32a611068187addd4013157</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-01 08:34:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>import_set_run</element>
+            <list_id display_value="sn_sap_data_int_purc_grp_stg" element="NULL" name="sn_sap_data_int_purc_grp_stg" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">55e4afd5c32a611068187addd4013155</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-01 08:34:49</sys_created_on>
+            <sys_id>91e4afd5c32a611068187addd4013157</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-01 08:34:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>template_import_log</element>
+            <list_id display_value="sn_sap_data_int_purc_grp_stg" element="NULL" name="sn_sap_data_int_purc_grp_stg" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">55e4afd5c32a611068187addd4013155</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-01 08:34:49</sys_created_on>
+            <sys_id>15e4afd5c32a611068187addd4013157</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-01 08:34:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sn_sap_data_int_purc_grp_stg</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-01 08:34:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>55e4afd5c32a611068187addd4013155</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_sap_data_int_purc_grp_stg</sys_name>
+            <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name>sys_ui_list_sn_sap_data_int_purc_grp_stg_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-01 08:34:48</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

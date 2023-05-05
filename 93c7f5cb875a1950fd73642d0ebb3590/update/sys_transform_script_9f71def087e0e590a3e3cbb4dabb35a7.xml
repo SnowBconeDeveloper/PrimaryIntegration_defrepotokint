@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="Transform Suppliers">e135c7758743dd1093264085dabb3589</map>
+        <order>100</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+    var gr = new GlideRecord('sn_sap_data_int_supplier_stg');
+    gr.addQuery('sys_import_set', source.sys_import_set);
+    gr.query();
+    while (gr.next()) {
+        var loc_details = {};
+        loc_details['street'] = gr.street_and_house_number;
+        loc_details['city'] = gr.district_1 + " " + gr.district_2;
+        loc_details['state'] = gr.region_state_province_county;
+        loc_details['zip'] = gr.postal_code;
+        loc_details['country'] = gr.country_key;
+        loc_details['fax_phone'] = gr.fax_number;
+        loc_details['phone'] = gr.first_telephone_number;
+        var name = new IntegrationsUtils().getLocationName(loc_details.street, loc_details.city, loc_details.state, loc_details.zip);
+        loc_details['name'] = name;
+        var targetRecordSysId = gr.sys_target_sys_id;
+        if (!gs.nil(targetRecordSysId)) {
+            var supplierLocation = new IntegrationsUtils().checkForSupplierLocation(targetRecordSysId);
+            if (!gs.nil(supplierLocation)) {
+                new IntegrationsUtils().updateLocation(targetRecordSysId.location, loc_details);
+            } else {
+                var getLocSysId = new IntegrationsUtils().getLocationID(loc_details);
+                if (!gs.nil(getLocSysId)) {
+                    var cr = new IntegrationsUtils().createSupplierLocation(targetRecordSysId, getLocSysId);
+                } else {
+                    var locationSysId = new IntegrationsUtils().createLocation(loc_details);
+                    new IntegrationsUtils().createSupplierLocation(targetRecordSysId, locationSysId.sys_id);
+                }
+            }
+        }
+    }
+
+})(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-20 03:33:29</sys_created_on>
+        <sys_id>9f71def087e0e590a3e3cbb4dabb35a7</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>onComplete</sys_name>
+        <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name>sys_transform_script_9f71def087e0e590a3e3cbb4dabb35a7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-01 07:09:53</sys_updated_on>
+        <when>onComplete</when>
+    </sys_transform_script>
+</record_update>
