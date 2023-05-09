@@ -7,10 +7,80 @@
         <active>true</active>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
-        <category/>
+        <category display_value="Procurement">691e0f45c36a61104dcc9d777d01316e</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Segregates ledger account JSON object to array of object.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Inputs&lt;/strong&gt; :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;JSON String&lt;/strong&gt;&amp;nbsp;- SAP ledger account JSON payload.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Delimiter&lt;/strong&gt; - Character that separate strings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Outputs&lt;/strong&gt; :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Ledger Account&amp;nbsp;&lt;/strong&gt;- Array of objects containing below fields:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Ledger Account Data - Objects containing these fields:
+        &lt;ul&gt;
+          &lt;li&gt;MCA Key&lt;/li&gt;
+          &lt;li&gt;Clearing Specific to Ledger Groups&lt;/li&gt;
+          &lt;li&gt;Tolerance Group for G/L Accounts&lt;/li&gt;
+          &lt;li&gt;Inflation Key&lt;/li&gt;
+          &lt;li&gt;Valuation Group&lt;/li&gt;
+          &lt;li&gt;Indicator: Manage Balances in Local Currency Only&lt;/li&gt;
+          &lt;li&gt;Indicator: Tax code is not a required field&lt;/li&gt;
+          &lt;li&gt;Commitment Item&lt;/li&gt;
+          &lt;li&gt;Recovery Indicator&lt;/li&gt;
+          &lt;li&gt;Indicator: Reconcil.acct ready for input at time of posting&lt;/li&gt;
+          &lt;li&gt;Alternative Account Number in Company Code&lt;/li&gt;
+          &lt;li&gt;Key for sorting according to assignment numbers&lt;/li&gt;
+          &lt;li&gt;Interest Calculation Frequency in Months&lt;/li&gt;
+          &lt;li&gt;Key Date of Last Interest Calculation&lt;/li&gt;
+          &lt;li&gt;Indicator: Is account blocked for posting&lt;/li&gt;
+          &lt;li&gt;Indicator: Open Item Management&lt;/li&gt;
+          &lt;li&gt;Indicator: Supplement for automatic postings&amp;nbsp;&lt;/li&gt;
+          &lt;li&gt;Indicator: Account marked for deletion?&lt;/li&gt;
+          &lt;li&gt;Indicator: Can Line Items Be Displayed by Account&lt;/li&gt;
+          &lt;li&gt;Indicator: Is account only posted to automatically&lt;/li&gt;
+          &lt;li&gt;Cash receipt account / cash disbursement account&lt;/li&gt;
+          &lt;li&gt;Indicator: Account Managed in External System&lt;/li&gt;
+          &lt;li&gt;Account currency&lt;/li&gt;
+          &lt;li&gt;Interest calculation indicator&lt;/li&gt;
+          &lt;li&gt;G/L account additional text&lt;/li&gt;
+          &lt;li&gt;Tax Category in Account Master Record&lt;/li&gt;
+          &lt;li&gt;Account is reconciliation account&lt;/li&gt;
+          &lt;li&gt;Key for Exchange Rate Differences in Foreign Currency Accts&lt;/li&gt;
+          &lt;li&gt;ID for account details&lt;/li&gt;
+          &lt;li&gt;Short key for a house bank&lt;/li&gt;
+          &lt;li&gt;Field status group&lt;/li&gt;
+          &lt;li&gt;Financial Budget Item&lt;/li&gt;
+          &lt;li&gt;Planning Level&lt;/li&gt;
+          &lt;li&gt;Planning group&lt;/li&gt;
+          &lt;li&gt;Name of Person who Created the Object&lt;/li&gt;
+          &lt;li&gt;Date on which the Record Was Created&lt;/li&gt;
+          &lt;li&gt;Date of the last interest calculation run&lt;/li&gt;
+          &lt;li&gt;Accounting Clerk Abbreviation&lt;/li&gt;
+          &lt;li&gt;Authorization Group&lt;/li&gt;
+          &lt;li&gt;G/L Account Number&lt;/li&gt;
+          &lt;li&gt;Client&lt;/li&gt;
+          &lt;li&gt;Company Code&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Total Rows -&lt;/strong&gt; Return the total number of records present in SAP Payload.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;strong&gt;Action Status&amp;nbsp;&lt;/strong&gt;-&amp;nbsp;Object containing following fields:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Code&lt;/strong&gt;&amp;nbsp;- If the request is executed successfully, code will be set to 0 but if the request failed, code will be set to 1.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Message&lt;/strong&gt;&amp;nbsp;- Reason for error. Populated only when an error occurs.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Requires a subscription for production use. &lt;a href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <ih_action>false</ih_action>
         <internal_name>segregate_gl_account_response</internal_name>
         <label_cache>[{"name":"{{action.json_string}}","label":"action➛Json String","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d9100514-3507-4450-bf03-6f5607e0e1eb"}},{"name":"{{action.delimiter}}","label":"action➛Delimiter","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"c4fc64d8-601f-4dd7-af17-3aa5c6f5a9a1"}},{"name":"{{step[36d88703-c7a1-4f81-9cf2-3bb4fa6228ce].ledger_account}}","label":"step➛Script step➛Ledger Account","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD6de8f5c1d1975110749276ce86985789","child_label":"Ledger Account Data","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"Ledger_Account_Data","child_uiUniqueId":"042e6424-ea58-4cbf-a6fc-b6aa3bd82078","uiUniqueId":"eb3b316f-4a52-4336-bd95-9a3fcf7d3917"}},{"name":"{{step[36d88703-c7a1-4f81-9cf2-3bb4fa6228ce].total_rows}}","label":"step➛Script step➛Total Rows","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"98ebe74d-fcd7-48a6-9ba7-adea2658eecf"}}]</label_cache>
@@ -22,12 +92,12 @@
         <pre_compiled>false</pre_compiled>
         <state>published</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:34:58</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f5a775414797511086887562846d43ed</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Segregate GL Account Response</sys_name>
         <sys_overrides/>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
@@ -35,7 +105,7 @@
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_f5a775414797511086887562846d43ed</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:59:05</sys_updated_on>
+        <sys_updated_on>2023-05-08 14:13:15</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -46,11 +116,11 @@
         <document_key>f5a775414797511086887562846d43ed</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:40:28</sys_created_on>
         <sys_id>16e8f5c14797511086887562846d43cd</sys_id>
         <sys_mod_count>6</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga@snc</sys_updated_by>
         <sys_updated_on>2023-04-07 06:05:30</sys_updated_on>
         <value/>
         <variable display_value="Ledger Account">d2e8f5c14797511086887562846d43c6</variable>
@@ -60,11 +130,11 @@
         <document_key>f5a775414797511086887562846d43ed</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:43:05</sys_created_on>
         <sys_id>2c8935054797511086887562846d4376</sys_id>
         <sys_mod_count>5</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga</sys_updated_by>
         <sys_updated_on>2023-02-26 06:44:46</sys_updated_on>
         <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDc0893505fd9751101e29007d5aae7943":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDc0893505fd9751101e29007d5aae7943.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"a4a32721-dc7c-4088-a6b6-8703c4fe24c6\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDc0893505fd9751101e29007d5aae7943\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">008935054797511086887562846d4347</variable>
@@ -74,11 +144,11 @@
         <document_key>f5a775414797511086887562846d43ed</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:43:05</sys_created_on>
         <sys_id>688935054797511086887562846d4376</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 16:43:05</sys_updated_on>
         <value>0</value>
         <variable display_value="Don't Treat as Error">988935054797511086887562846d434b</variable>
@@ -88,11 +158,11 @@
         <document_key>f5a775414797511086887562846d43ed</document_key>
         <order>4</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2022-12-29 12:41:29</sys_created_on>
         <sys_id>efc187f9878ced10a3e3cbb4dabb35a8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga</sys_updated_by>
         <sys_updated_on>2022-12-29 12:41:29</sys_updated_on>
         <value/>
         <variable display_value="Total Rows">dfc187f9878ced10a3e3cbb4dabb3562</variable>
@@ -101,11 +171,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>ledger_account</field>
         <id>f5a775414797511086887562846d43ed</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:40:28</sys_created_on>
         <sys_id>92e8f5c14797511086887562846d43cd</sys_id>
         <sys_mod_count>5</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga@snc</sys_updated_by>
         <sys_updated_on>2023-04-07 06:05:30</sys_updated_on>
         <table>var__m_sys_hub_action_output_f5a775414797511086887562846d43ed</table>
         <value>{{step[36d88703-c7a1-4f81-9cf2-3bb4fa6228ce].ledger_account}}</value>
@@ -113,11 +183,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>total_rows</field>
         <id>f5a775414797511086887562846d43ed</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:43:05</sys_created_on>
         <sys_id>ac8935054797511086887562846d4375</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga@snc</sys_updated_by>
         <sys_updated_on>2023-03-31 06:14:53</sys_updated_on>
         <table>var__m_sys_hub_action_output_f5a775414797511086887562846d43ed</table>
         <value>{{step[36d88703-c7a1-4f81-9cf2-3bb4fa6228ce].total_rows}}</value>
@@ -125,11 +195,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>__action_status__</field>
         <id>f5a775414797511086887562846d43ed</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:43:05</sys_created_on>
         <sys_id>e88935054797511086887562846d4375</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 16:43:05</sys_updated_on>
         <table>var__m_sys_hub_action_output_f5a775414797511086887562846d43ed</table>
         <value/>
@@ -137,11 +207,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>__dont_treat_as_error__</field>
         <id>f5a775414797511086887562846d43ed</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:43:04</sys_created_on>
         <sys_id>288935054797511086887562846d4375</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 16:43:04</sys_updated_on>
         <table>var__m_sys_hub_action_output_f5a775414797511086887562846d43ed</table>
         <value/>
@@ -161,12 +231,12 @@
         <outputs/>
         <section/>
         <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:40:24</sys_created_on>
         <sys_id>55e8f5c14797511086887562846d4355</sys_id>
         <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga@snc</sys_updated_by>
         <sys_updated_on>2023-04-07 06:14:48</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=55e8f5c14797511086887562846d4355"/>
@@ -175,11 +245,11 @@
         <document_key>55e8f5c14797511086887562846d4355</document_key>
         <order>400</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:40:27</sys_created_on>
         <sys_id>46e8f5c14797511086887562846d43bf</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 16:40:27</sys_updated_on>
         <value>35aa573fd7802200bdbaee5b5e610375</value>
         <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
@@ -189,11 +259,11 @@
         <document_key>55e8f5c14797511086887562846d4355</document_key>
         <order>600</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:40:28</sys_created_on>
         <sys_id>9ee8f5c14797511086887562846d43bf</sys_id>
         <sys_mod_count>17</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga@snc</sys_updated_by>
         <sys_updated_on>2023-04-07 06:14:48</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 	//To create a JSON object
@@ -213,11 +283,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>delimiter</field>
         <id>55e8f5c14797511086887562846d4355</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:40:28</sys_created_on>
         <sys_id>5ee8f5c14797511086887562846d43c0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 16:40:28</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_55e8f5c14797511086887562846d4355</table>
         <value>{{action.delimiter}}</value>
@@ -225,11 +295,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>json</field>
         <id>55e8f5c14797511086887562846d4355</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:40:28</sys_created_on>
         <sys_id>9ae8f5c14797511086887562846d43c0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 16:40:28</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_55e8f5c14797511086887562846d4355</table>
         <value>{{action.json_string}}</value>
@@ -297,7 +367,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:40:25</sys_created_on>
         <sys_id>a5e8f5c14797511086887562846d4383</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -306,7 +376,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 16:40:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -380,7 +450,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:40:25</sys_created_on>
         <sys_id>ede8f5c14797511086887562846d4386</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -389,7 +459,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 16:40:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -464,7 +534,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2022-12-29 12:41:22</sys_created_on>
         <sys_id>b5c147f9878ced10a3e3cbb4dabb35d0</sys_id>
         <sys_mod_count>2</sys_mod_count>
@@ -473,7 +543,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga</sys_updated_by>
         <sys_updated_on>2023-01-30 08:22:13</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -547,7 +617,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:40:26</sys_created_on>
         <sys_id>b9e8f5c14797511086887562846d438d</sys_id>
         <sys_mod_count>6</sys_mod_count>
@@ -556,7 +626,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga@snc</sys_updated_by>
         <sys_updated_on>2023-04-07 06:05:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -581,16 +651,16 @@
         <name>var__m_sys_hub_step_ext_output_55e8f5c14797511086887562846d4355</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:40:27</sys_created_on>
         <sys_id>4ee8f5c14797511086887562846d4391</sys_id>
         <sys_mod_count>4</sys_mod_count>
-        <sys_name/>
+        <sys_name>Ledger Account</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga@snc</sys_updated_by>
         <sys_updated_on>2023-04-07 06:05:30</sys_updated_on>
         <url/>
         <url_target/>
@@ -604,16 +674,16 @@
         <name>var__m_sys_hub_step_ext_output_55e8f5c14797511086887562846d4355</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2022-12-29 12:41:23</sys_created_on>
         <sys_id>8ec147f9878ced10a3e3cbb4dabb35d3</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name/>
+        <sys_name>Total Rows</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga</sys_updated_by>
         <sys_updated_on>2023-01-30 08:22:13</sys_updated_on>
         <url/>
         <url_target/>
@@ -679,7 +749,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:40:23</sys_created_on>
         <sys_id>09e8b5814797511086887562846d43b8</sys_id>
         <sys_mod_count>2</sys_mod_count>
@@ -688,7 +758,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga</sys_updated_by>
         <sys_updated_on>2023-01-30 08:22:10</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -763,7 +833,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:40:24</sys_created_on>
         <sys_id>9de8f5c14797511086887562846d434f</sys_id>
         <sys_mod_count>2</sys_mod_count>
@@ -772,7 +842,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga</sys_updated_by>
         <sys_updated_on>2023-01-30 08:22:11</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -850,7 +920,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:43:03</sys_created_on>
         <sys_id>008935054797511086887562846d4347</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -859,7 +929,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 16:43:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -937,7 +1007,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:43:04</sys_created_on>
         <sys_id>988935054797511086887562846d434b</sys_id>
         <sys_mod_count>1</sys_mod_count>
@@ -946,7 +1016,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 16:43:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1024,7 +1094,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:40:28</sys_created_on>
         <sys_id>d2e8f5c14797511086887562846d43c6</sys_id>
         <sys_mod_count>5</sys_mod_count>
@@ -1033,7 +1103,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga@snc</sys_updated_by>
         <sys_updated_on>2023-03-31 06:09:16</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1111,7 +1181,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2022-12-29 12:41:28</sys_created_on>
         <sys_id>dfc187f9878ced10a3e3cbb4dabb3562</sys_id>
         <sys_mod_count>2</sys_mod_count>
@@ -1120,7 +1190,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga</sys_updated_by>
         <sys_updated_on>2023-01-30 08:22:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1140,11 +1210,11 @@
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=f5a775414797511086887562846d43ed^sys_idNOT INa3e8f5c14797511086887562846d43cf"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
         <action_type_id display_value="Segregate GL Account Response">f5a775414797511086887562846d43ed</action_type_id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:40:33</sys_created_on>
         <sys_id>a3e8f5c14797511086887562846d43cf</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 16:40:33</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=a3e8f5c14797511086887562846d43cf"/>
@@ -1158,16 +1228,16 @@
         <name>var__m_sys_hub_action_input_f5a775414797511086887562846d43ed</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:40:24</sys_created_on>
         <sys_id>15e8f5c14797511086887562846d4353</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name/>
+        <sys_name>Delimiter</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga</sys_updated_by>
         <sys_updated_on>2023-01-30 08:22:11</sys_updated_on>
         <url/>
         <url_target/>
@@ -1181,16 +1251,16 @@
         <name>var__m_sys_hub_action_input_f5a775414797511086887562846d43ed</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:40:24</sys_created_on>
         <sys_id>91e8f5c14797511086887562846d434f</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name/>
+        <sys_name>Json String</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga</sys_updated_by>
         <sys_updated_on>2023-01-30 08:22:11</sys_updated_on>
         <url/>
         <url_target/>
@@ -1206,16 +1276,16 @@
         <name>var__m_sys_hub_action_output_f5a775414797511086887562846d43ed</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:43:04</sys_created_on>
         <sys_id>948935054797511086887562846d4351</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 16:43:04</sys_updated_on>
         <url/>
         <url_target/>
@@ -1229,16 +1299,16 @@
         <name>var__m_sys_hub_action_output_f5a775414797511086887562846d43ed</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:40:28</sys_created_on>
         <sys_id>9ee8f5c14797511086887562846d43ca</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name/>
+        <sys_name>Ledger Account</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga</sys_updated_by>
         <sys_updated_on>2023-01-30 08:22:14</sys_updated_on>
         <url/>
         <url_target/>
@@ -1252,16 +1322,16 @@
         <name>var__m_sys_hub_action_output_f5a775414797511086887562846d43ed</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2022-12-29 12:41:29</sys_created_on>
         <sys_id>afc187f9878ced10a3e3cbb4dabb3566</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name/>
+        <sys_name>Total Rows</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga</sys_updated_by>
         <sys_updated_on>2023-01-30 08:22:15</sys_updated_on>
         <url/>
         <url_target/>
@@ -1275,16 +1345,16 @@
         <name>var__m_sys_hub_action_output_f5a775414797511086887562846d43ed</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 16:43:04</sys_created_on>
         <sys_id>dc8935054797511086887562846d434a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 16:43:04</sys_updated_on>
         <url/>
         <url_target/>
@@ -1294,17 +1364,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Segregate GL Account Response">f5a775414797511086887562846d43ed</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"6d2e7d894797511086887562846d430f","name":"plan","plan_signature":null}}</plan>
-        <snapshot>dc529491c31e255068187addd401310a</snapshot>
-        <sys_created_by>admin</sys_created_by>
+        <snapshot>59807061c3ee611031c77addd401310a</snapshot>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:21</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6d2e7d894797511086887562846d430f</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:59:07</sys_updated_on>
+        <sys_updated_by>Krishna</sys_updated_by>
+        <sys_updated_on>2023-05-01 14:05:14</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1313,10 +1383,80 @@
         <action_template/>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
-        <category/>
+        <category display_value="Procurement">691e0f45c36a61104dcc9d777d01316e</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Segregates ledger account JSON object to array of object.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Inputs&lt;/strong&gt; :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;JSON String&lt;/strong&gt;&amp;nbsp;- SAP ledger account JSON payload.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Delimiter&lt;/strong&gt; - Character that separate strings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Outputs&lt;/strong&gt; :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Ledger Account&amp;nbsp;&lt;/strong&gt;- Array of objects containing below fields:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Ledger Account Data - Objects containing these fields:
+        &lt;ul&gt;
+          &lt;li&gt;MCA Key&lt;/li&gt;
+          &lt;li&gt;Clearing Specific to Ledger Groups&lt;/li&gt;
+          &lt;li&gt;Tolerance Group for G/L Accounts&lt;/li&gt;
+          &lt;li&gt;Inflation Key&lt;/li&gt;
+          &lt;li&gt;Valuation Group&lt;/li&gt;
+          &lt;li&gt;Indicator: Manage Balances in Local Currency Only&lt;/li&gt;
+          &lt;li&gt;Indicator: Tax code is not a required field&lt;/li&gt;
+          &lt;li&gt;Commitment Item&lt;/li&gt;
+          &lt;li&gt;Recovery Indicator&lt;/li&gt;
+          &lt;li&gt;Indicator: Reconcil.acct ready for input at time of posting&lt;/li&gt;
+          &lt;li&gt;Alternative Account Number in Company Code&lt;/li&gt;
+          &lt;li&gt;Key for sorting according to assignment numbers&lt;/li&gt;
+          &lt;li&gt;Interest Calculation Frequency in Months&lt;/li&gt;
+          &lt;li&gt;Key Date of Last Interest Calculation&lt;/li&gt;
+          &lt;li&gt;Indicator: Is account blocked for posting&lt;/li&gt;
+          &lt;li&gt;Indicator: Open Item Management&lt;/li&gt;
+          &lt;li&gt;Indicator: Supplement for automatic postings&amp;nbsp;&lt;/li&gt;
+          &lt;li&gt;Indicator: Account marked for deletion?&lt;/li&gt;
+          &lt;li&gt;Indicator: Can Line Items Be Displayed by Account&lt;/li&gt;
+          &lt;li&gt;Indicator: Is account only posted to automatically&lt;/li&gt;
+          &lt;li&gt;Cash receipt account / cash disbursement account&lt;/li&gt;
+          &lt;li&gt;Indicator: Account Managed in External System&lt;/li&gt;
+          &lt;li&gt;Account currency&lt;/li&gt;
+          &lt;li&gt;Interest calculation indicator&lt;/li&gt;
+          &lt;li&gt;G/L account additional text&lt;/li&gt;
+          &lt;li&gt;Tax Category in Account Master Record&lt;/li&gt;
+          &lt;li&gt;Account is reconciliation account&lt;/li&gt;
+          &lt;li&gt;Key for Exchange Rate Differences in Foreign Currency Accts&lt;/li&gt;
+          &lt;li&gt;ID for account details&lt;/li&gt;
+          &lt;li&gt;Short key for a house bank&lt;/li&gt;
+          &lt;li&gt;Field status group&lt;/li&gt;
+          &lt;li&gt;Financial Budget Item&lt;/li&gt;
+          &lt;li&gt;Planning Level&lt;/li&gt;
+          &lt;li&gt;Planning group&lt;/li&gt;
+          &lt;li&gt;Name of Person who Created the Object&lt;/li&gt;
+          &lt;li&gt;Date on which the Record Was Created&lt;/li&gt;
+          &lt;li&gt;Date of the last interest calculation run&lt;/li&gt;
+          &lt;li&gt;Accounting Clerk Abbreviation&lt;/li&gt;
+          &lt;li&gt;Authorization Group&lt;/li&gt;
+          &lt;li&gt;G/L Account Number&lt;/li&gt;
+          &lt;li&gt;Client&lt;/li&gt;
+          &lt;li&gt;Company Code&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Total Rows -&lt;/strong&gt; Return the total number of records present in SAP Payload.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;strong&gt;Action Status&amp;nbsp;&lt;/strong&gt;-&amp;nbsp;Object containing following fields:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Code&lt;/strong&gt;&amp;nbsp;- If the request is executed successfully, code will be set to 0 but if the request failed, code will be set to 1.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Message&lt;/strong&gt;&amp;nbsp;- Reason for error. Populated only when an error occurs.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Requires a subscription for production use. &lt;a href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <internal_name>segregate_gl_account_response</internal_name>
         <label_cache>[{"name":"{{action.json_string}}","label":"action➛Json String","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d9100514-3507-4450-bf03-6f5607e0e1eb"}},{"name":"{{action.delimiter}}","label":"action➛Delimiter","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"c4fc64d8-601f-4dd7-af17-3aa5c6f5a9a1"}},{"name":"{{step[36d88703-c7a1-4f81-9cf2-3bb4fa6228ce].ledger_account}}","label":"step➛Script step➛Ledger Account","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD6de8f5c1d1975110749276ce86985789","child_label":"Ledger Account Data","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"Ledger_Account_Data","child_uiUniqueId":"042e6424-ea58-4cbf-a6fc-b6aa3bd82078","uiUniqueId":"eb3b316f-4a52-4336-bd95-9a3fcf7d3917"}},{"name":"{{step[36d88703-c7a1-4f81-9cf2-3bb4fa6228ce].total_rows}}","label":"step➛Script step➛Total Rows","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"98ebe74d-fcd7-48a6-9ba7-adea2658eecf"}}]</label_cache>
         <master>true</master>
@@ -1326,20 +1466,20 @@
         <outputs/>
         <parent_action display_value="Segregate GL Account Response">f5a775414797511086887562846d43ed</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:05</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>251ef9894797511086887562846d4313</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:59:04</sys_updated_on>
+        <sys_updated_by>varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 14:08:55</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1350,11 +1490,11 @@
         <document_key>251ef9894797511086887562846d4313</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:15</sys_created_on>
         <sys_id>4c2e3d894797511086887562846d435d</sys_id>
         <sys_mod_count>4</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga</sys_updated_by>
         <sys_updated_on>2023-02-26 06:45:59</sys_updated_on>
         <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD7b1e3d89b99751105fb796f4e63e6111":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD7b1e3d89b99751105fb796f4e63e6111.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"a4a32721-dc7c-4088-a6b6-8703c4fe24c6\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD7b1e3d89b99751105fb796f4e63e6111\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">7b1e3d894797511086887562846d4315</variable>
@@ -1364,11 +1504,11 @@
         <document_key>251ef9894797511086887562846d4313</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:15</sys_created_on>
         <sys_id>882e3d894797511086887562846d435d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:15</sys_updated_on>
         <value>0</value>
         <variable display_value="Don't Treat as Error">b31e3d894797511086887562846d431a</variable>
@@ -1378,11 +1518,11 @@
         <document_key>251ef9894797511086887562846d4313</document_key>
         <order>4</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2022-12-29 12:44:58</sys_created_on>
         <sys_id>ba92c33d878ced10a3e3cbb4dabb35c9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga</sys_updated_by>
         <sys_updated_on>2022-12-29 12:44:58</sys_updated_on>
         <value/>
         <variable display_value="Total Rows">2e92c33d878ced10a3e3cbb4dabb35b5</variable>
@@ -1391,11 +1531,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>ledger_account</field>
         <id>251ef9894797511086887562846d4313</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:15</sys_created_on>
         <sys_id>cc2e3d894797511086887562846d435c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:15</sys_updated_on>
         <table>var__m_sys_hub_action_output_251ef9894797511086887562846d4313</table>
         <value>{{step[36d88703-c7a1-4f81-9cf2-3bb4fa6228ce].ledger_account}}</value>
@@ -1403,11 +1543,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>total_rows</field>
         <id>251ef9894797511086887562846d4313</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:15</sys_created_on>
         <sys_id>082e3d894797511086887562846d435d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:15</sys_updated_on>
         <table>var__m_sys_hub_action_output_251ef9894797511086887562846d4313</table>
         <value>{{step[36d88703-c7a1-4f81-9cf2-3bb4fa6228ce].total_rows}}</value>
@@ -1415,11 +1555,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>__action_status__</field>
         <id>251ef9894797511086887562846d4313</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:15</sys_created_on>
         <sys_id>442e3d894797511086887562846d435d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:15</sys_updated_on>
         <table>var__m_sys_hub_action_output_251ef9894797511086887562846d4313</table>
         <value/>
@@ -1427,11 +1567,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>__dont_treat_as_error__</field>
         <id>251ef9894797511086887562846d4313</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:15</sys_created_on>
         <sys_id>802e3d894797511086887562846d435d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:15</sys_updated_on>
         <table>var__m_sys_hub_action_output_251ef9894797511086887562846d4313</table>
         <value/>
@@ -1451,12 +1591,12 @@
         <outputs/>
         <section/>
         <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:11</sys_created_on>
         <sys_id>4b1ef9894797511086887562846d43c2</sys_id>
         <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga@snc</sys_updated_by>
         <sys_updated_on>2023-04-07 06:14:51</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4b1ef9894797511086887562846d43c2"/>
@@ -1465,11 +1605,11 @@
         <document_key>4b1ef9894797511086887562846d43c2</document_key>
         <order>400</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:14</sys_created_on>
         <sys_id>271e3d894797511086887562846d430d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:14</sys_updated_on>
         <value>35aa573fd7802200bdbaee5b5e610375</value>
         <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
@@ -1479,11 +1619,11 @@
         <document_key>4b1ef9894797511086887562846d43c2</document_key>
         <order>600</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:14</sys_created_on>
         <sys_id>e71e3d894797511086887562846d430d</sys_id>
         <sys_mod_count>17</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga@snc</sys_updated_by>
         <sys_updated_on>2023-04-07 06:14:51</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 	//To create a JSON object
@@ -1503,11 +1643,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>delimiter</field>
         <id>4b1ef9894797511086887562846d43c2</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:14</sys_created_on>
         <sys_id>b71e3d894797511086887562846d430e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:14</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_4b1ef9894797511086887562846d43c2</table>
         <value>{{action.delimiter}}</value>
@@ -1515,11 +1655,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>json</field>
         <id>4b1ef9894797511086887562846d43c2</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:14</sys_created_on>
         <sys_id>f31e3d894797511086887562846d430e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:14</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_4b1ef9894797511086887562846d43c2</table>
         <value>{{action.json_string}}</value>
@@ -1587,7 +1727,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:11</sys_created_on>
         <sys_id>431ef9894797511086887562846d43c6</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1596,7 +1736,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:11</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1670,7 +1810,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:12</sys_created_on>
         <sys_id>571ef9894797511086887562846d43ca</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1679,7 +1819,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1754,7 +1894,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:12</sys_created_on>
         <sys_id>1b1ef9894797511086887562846d43dc</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1763,7 +1903,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1837,7 +1977,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2022-12-29 12:44:57</sys_created_on>
         <sys_id>5292c33d878ced10a3e3cbb4dabb35a1</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1846,7 +1986,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga</sys_updated_by>
         <sys_updated_on>2022-12-29 12:44:57</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1871,16 +2011,16 @@
         <name>var__m_sys_hub_step_ext_output_4b1ef9894797511086887562846d43c2</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2022-12-29 12:44:57</sys_created_on>
         <sys_id>1692c33d878ced10a3e3cbb4dabb35a4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Total Rows</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga</sys_updated_by>
         <sys_updated_on>2022-12-29 12:44:57</sys_updated_on>
         <url/>
         <url_target/>
@@ -1894,16 +2034,16 @@
         <name>var__m_sys_hub_step_ext_output_4b1ef9894797511086887562846d43c2</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:13</sys_created_on>
         <sys_id>e71ef9894797511086887562846d43e0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Ledger Account</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:13</sys_updated_on>
         <url/>
         <url_target/>
@@ -1969,7 +2109,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:09</sys_created_on>
         <sys_id>221ef9894797511086887562846d4317</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1978,7 +2118,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:09</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2053,7 +2193,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:10</sys_created_on>
         <sys_id>be1ef9894797511086887562846d431b</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2062,7 +2202,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:10</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2140,7 +2280,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2022-12-29 12:44:58</sys_created_on>
         <sys_id>2e92c33d878ced10a3e3cbb4dabb35b5</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2149,7 +2289,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga</sys_updated_by>
         <sys_updated_on>2022-12-29 12:44:58</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2227,7 +2367,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:14</sys_created_on>
         <sys_id>7b1e3d894797511086887562846d4315</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2236,7 +2376,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2314,7 +2454,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:14</sys_created_on>
         <sys_id>b31e3d894797511086887562846d431a</sys_id>
         <sys_mod_count>1</sys_mod_count>
@@ -2323,7 +2463,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2401,7 +2541,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:15</sys_created_on>
         <sys_id>c42e3d894797511086887562846d4320</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2410,7 +2550,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2430,11 +2570,11 @@
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=251ef9894797511086887562846d4313^sys_idNOT IN442e3d894797511086887562846d4360"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
         <action_type_id display_value="Segregate GL Account Response">251ef9894797511086887562846d4313</action_type_id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:16</sys_created_on>
         <sys_id>442e3d894797511086887562846d4360</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:16</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=442e3d894797511086887562846d4360"/>
@@ -2448,16 +2588,16 @@
         <name>var__m_sys_hub_action_input_251ef9894797511086887562846d4313</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:11</sys_created_on>
         <sys_id>8f1ef9894797511086887562846d43c0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Delimiter</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:11</sys_updated_on>
         <url/>
         <url_target/>
@@ -2471,16 +2611,16 @@
         <name>var__m_sys_hub_action_input_251ef9894797511086887562846d4313</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:10</sys_created_on>
         <sys_id>f21ef9894797511086887562846d431b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Json String</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:10</sys_updated_on>
         <url/>
         <url_target/>
@@ -2496,16 +2636,16 @@
         <name>var__m_sys_hub_action_output_251ef9894797511086887562846d4313</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:15</sys_created_on>
         <sys_id>3f1e3d894797511086887562846d431f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:15</sys_updated_on>
         <url/>
         <url_target/>
@@ -2519,16 +2659,16 @@
         <name>var__m_sys_hub_action_output_251ef9894797511086887562846d4313</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:15</sys_created_on>
         <sys_id>402e3d894797511086887562846d4356</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Ledger Account</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:15</sys_updated_on>
         <url/>
         <url_target/>
@@ -2542,16 +2682,16 @@
         <name>var__m_sys_hub_action_output_251ef9894797511086887562846d4313</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2022-12-29 12:44:58</sys_created_on>
         <sys_id>ee92c33d878ced10a3e3cbb4dabb35c5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Total Rows</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>shreenag.araga</sys_updated_by>
         <sys_updated_on>2022-12-29 12:44:58</sys_updated_on>
         <url/>
         <url_target/>
@@ -2565,16 +2705,16 @@
         <name>var__m_sys_hub_action_output_251ef9894797511086887562846d4313</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Priyanshi</sys_created_by>
         <sys_created_on>2022-11-19 17:03:14</sys_created_on>
         <sys_id>f71e3d894797511086887562846d4319</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Priyanshi</sys_updated_by>
         <sys_updated_on>2022-11-19 17:03:14</sys_updated_on>
         <url/>
         <url_target/>
@@ -2583,6 +2723,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>f5a775414797511086887562846d43ed</sys_id>
         <latest_snapshot>251ef9894797511086887562846d4313</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch7-02-16-2023_02-28-2023_1844.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch7a-03-27-2023_04-04-2023_1511.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

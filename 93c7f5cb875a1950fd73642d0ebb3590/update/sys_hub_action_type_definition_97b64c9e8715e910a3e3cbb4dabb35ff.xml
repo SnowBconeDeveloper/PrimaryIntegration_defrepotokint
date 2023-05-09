@@ -7,7 +7,7 @@
         <active>true</active>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
-        <category/>
+        <category display_value="Procurement">691e0f45c36a61104dcc9d777d01316e</category>
         <copied_from/>
         <copied_from_name/>
         <description>&lt;p&gt;Segregates cost center JSON object to array of object containing text.&lt;/p&gt;
@@ -56,7 +56,7 @@
         <pre_compiled>false</pre_compiled>
         <state>published</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:39:38</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
@@ -69,7 +69,7 @@
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_97b64c9e8715e910a3e3cbb4dabb35ff</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-01 07:51:48</sys_updated_on>
+        <sys_updated_on>2023-05-08 13:50:07</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -80,11 +80,11 @@
         <document_key>97b64c9e8715e910a3e3cbb4dabb35ff</document_key>
         <order>4</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-07 04:52:08</sys_created_on>
         <sys_id>29cbcb21c38ee11031c77addd4013173</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 04:52:08</sys_updated_on>
         <value>0</value>
         <variable display_value="Don't Treat as Error">95cbcb21c38ee11031c77addd401316b</variable>
@@ -94,11 +94,11 @@
         <document_key>97b64c9e8715e910a3e3cbb4dabb35ff</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:16</sys_created_on>
         <sys_id>dc974cde8715e910a3e3cbb4dabb3514</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:16</sys_updated_on>
         <value/>
         <variable display_value="Total Rows">18974cde8715e910a3e3cbb4dabb350e</variable>
@@ -108,7 +108,7 @@
         <document_key>97b64c9e8715e910a3e3cbb4dabb35ff</document_key>
         <order>3</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-07 04:52:08</sys_created_on>
         <sys_id>edcbcb21c38ee11031c77addd4013173</sys_id>
         <sys_mod_count>1</sys_mod_count>
@@ -121,11 +121,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>cost_center_data</field>
         <id>97b64c9e8715e910a3e3cbb4dabb35ff</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:16</sys_created_on>
         <sys_id>98974cde8715e910a3e3cbb4dabb3514</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:16</sys_updated_on>
         <table>var__m_sys_hub_action_output_97b64c9e8715e910a3e3cbb4dabb35ff</table>
         <value>{{step[e83ce4b4-f39c-4384-a724-674c67765aa9].cost_center_data}}</value>
@@ -133,11 +133,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>total_rows</field>
         <id>97b64c9e8715e910a3e3cbb4dabb35ff</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:16</sys_created_on>
         <sys_id>5c974cde8715e910a3e3cbb4dabb3514</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:16</sys_updated_on>
         <table>var__m_sys_hub_action_output_97b64c9e8715e910a3e3cbb4dabb35ff</table>
         <value>{{step[e83ce4b4-f39c-4384-a724-674c67765aa9].total_rows}}</value>
@@ -145,11 +145,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>__action_status__</field>
         <id>97b64c9e8715e910a3e3cbb4dabb35ff</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-07 04:52:08</sys_created_on>
         <sys_id>a5cbcb21c38ee11031c77addd4013173</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 04:52:08</sys_updated_on>
         <table>var__m_sys_hub_action_output_97b64c9e8715e910a3e3cbb4dabb35ff</table>
         <value/>
@@ -157,11 +157,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>__dont_treat_as_error__</field>
         <id>97b64c9e8715e910a3e3cbb4dabb35ff</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-07 04:52:08</sys_created_on>
         <sys_id>edcbcb21c38ee11031c77addd4013172</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 04:52:08</sys_updated_on>
         <table>var__m_sys_hub_action_output_97b64c9e8715e910a3e3cbb4dabb35ff</table>
         <value/>
@@ -181,12 +181,12 @@
         <outputs/>
         <section/>
         <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:14</sys_created_on>
         <sys_id>c4970cde8715e910a3e3cbb4dabb35da</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 04:53:49</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c4970cde8715e910a3e3cbb4dabb35da"/>
@@ -195,11 +195,11 @@
         <document_key>c4970cde8715e910a3e3cbb4dabb35da</document_key>
         <order>600</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:15</sys_created_on>
         <sys_id>1c974cde8715e910a3e3cbb4dabb3502</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:15</sys_updated_on>
         <value>(function execute(inputs, outputs) {
     var input_json = inputs.inputJSON;
@@ -215,11 +215,11 @@
         <document_key>c4970cde8715e910a3e3cbb4dabb35da</document_key>
         <order>400</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:15</sys_created_on>
         <sys_id>58974cde8715e910a3e3cbb4dabb3502</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:15</sys_updated_on>
         <value>35aa573fd7802200bdbaee5b5e610375</value>
         <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
@@ -228,11 +228,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>delimeter</field>
         <id>c4970cde8715e910a3e3cbb4dabb35da</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:15</sys_created_on>
         <sys_id>94974cde8715e910a3e3cbb4dabb3503</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:15</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_c4970cde8715e910a3e3cbb4dabb35da</table>
         <value>{{action.delimeter}}</value>
@@ -240,11 +240,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>inputJSON</field>
         <id>c4970cde8715e910a3e3cbb4dabb35da</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:15</sys_created_on>
         <sys_id>58974cde8715e910a3e3cbb4dabb3503</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:15</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_c4970cde8715e910a3e3cbb4dabb35da</table>
         <value>{{action.json_string}}</value>
@@ -312,7 +312,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:14</sys_created_on>
         <sys_id>84970cde8715e910a3e3cbb4dabb35f1</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -321,7 +321,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -395,7 +395,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:14</sys_created_on>
         <sys_id>88970cde8715e910a3e3cbb4dabb35e1</sys_id>
         <sys_mod_count>1</sys_mod_count>
@@ -404,7 +404,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 04:53:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -479,7 +479,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:14</sys_created_on>
         <sys_id>0c970cde8715e910a3e3cbb4dabb35f6</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -488,7 +488,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -562,7 +562,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:15</sys_created_on>
         <sys_id>48970cde8715e910a3e3cbb4dabb35fb</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -571,7 +571,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -596,7 +596,7 @@
         <name>var__m_sys_hub_step_ext_output_c4970cde8715e910a3e3cbb4dabb35da</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:14</sys_created_on>
         <sys_id>88970cde8715e910a3e3cbb4dabb35fa</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -605,7 +605,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:14</sys_updated_on>
         <url/>
         <url_target/>
@@ -619,7 +619,7 @@
         <name>var__m_sys_hub_step_ext_output_c4970cde8715e910a3e3cbb4dabb35da</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:15</sys_created_on>
         <sys_id>88970cde8715e910a3e3cbb4dabb35fe</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -628,7 +628,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:15</sys_updated_on>
         <url/>
         <url_target/>
@@ -694,7 +694,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:14</sys_created_on>
         <sys_id>bb870cde8715e910a3e3cbb4dabb35d4</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -703,7 +703,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -778,7 +778,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:13</sys_created_on>
         <sys_id>f7870cde8715e910a3e3cbb4dabb35cf</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -787,7 +787,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:13</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -865,7 +865,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:15</sys_created_on>
         <sys_id>18974cde8715e910a3e3cbb4dabb350e</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -874,7 +874,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -952,7 +952,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-07 04:52:08</sys_created_on>
         <sys_id>95cbcb21c38ee11031c77addd401316b</sys_id>
         <sys_mod_count>1</sys_mod_count>
@@ -961,7 +961,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 04:52:08</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1039,7 +1039,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:15</sys_created_on>
         <sys_id>dc974cde8715e910a3e3cbb4dabb3508</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1048,7 +1048,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1126,7 +1126,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-07 04:52:07</sys_created_on>
         <sys_id>ddcbcb21c38ee11031c77addd4013166</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1135,7 +1135,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 04:52:07</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1155,11 +1155,11 @@
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=97b64c9e8715e910a3e3cbb4dabb35ff^sys_idNOT IN74974cde8715e910a3e3cbb4dabb3517"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
         <action_type_id display_value="Segregate Cost Center Text Data Response">97b64c9e8715e910a3e3cbb4dabb35ff</action_type_id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:18</sys_created_on>
         <sys_id>74974cde8715e910a3e3cbb4dabb3517</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:18</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=74974cde8715e910a3e3cbb4dabb3517^sys_idNOT IN962c4361c38ee11031c77addd4013158"/>
@@ -1170,11 +1170,11 @@
         <label>Processing Input String</label>
         <order>1</order>
         <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{\\\"code\\\":\\\"{{step[e83ce4b4-f39c-4384-a724-674c67765aa9].__step_status__.code}}\\\"}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[e83ce4b4-f39c-4384-a724-674c67765aa9].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-07 04:53:49</sys_created_on>
         <sys_id>962c4361c38ee11031c77addd4013158</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 04:53:49</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_97b64c9e8715e910a3e3cbb4dabb35ff^sys_idNOT IN04970cde8715e910a3e3cbb4dabb35d8,fb870cde8715e910a3e3cbb4dabb35d3"/>
@@ -1187,7 +1187,7 @@
         <name>var__m_sys_hub_action_input_97b64c9e8715e910a3e3cbb4dabb35ff</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:14</sys_created_on>
         <sys_id>04970cde8715e910a3e3cbb4dabb35d8</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1196,7 +1196,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:14</sys_updated_on>
         <url/>
         <url_target/>
@@ -1210,7 +1210,7 @@
         <name>var__m_sys_hub_action_input_97b64c9e8715e910a3e3cbb4dabb35ff</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:14</sys_created_on>
         <sys_id>fb870cde8715e910a3e3cbb4dabb35d3</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1219,7 +1219,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:14</sys_updated_on>
         <url/>
         <url_target/>
@@ -1235,7 +1235,7 @@
         <name>var__m_sys_hub_action_output_97b64c9e8715e910a3e3cbb4dabb35ff</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:15</sys_created_on>
         <sys_id>58974cde8715e910a3e3cbb4dabb350d</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1244,7 +1244,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:15</sys_updated_on>
         <url/>
         <url_target/>
@@ -1258,7 +1258,7 @@
         <name>var__m_sys_hub_action_output_97b64c9e8715e910a3e3cbb4dabb35ff</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-07 04:52:08</sys_created_on>
         <sys_id>61cbcb21c38ee11031c77addd4013170</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1267,7 +1267,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 04:52:08</sys_updated_on>
         <url/>
         <url_target/>
@@ -1281,7 +1281,7 @@
         <name>var__m_sys_hub_action_output_97b64c9e8715e910a3e3cbb4dabb35ff</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:15</sys_created_on>
         <sys_id>90974cde8715e910a3e3cbb4dabb3512</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1290,7 +1290,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:15</sys_updated_on>
         <url/>
         <url_target/>
@@ -1304,7 +1304,7 @@
         <name>var__m_sys_hub_action_output_97b64c9e8715e910a3e3cbb4dabb35ff</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-07 04:52:08</sys_created_on>
         <sys_id>d9cbcb21c38ee11031c77addd401316a</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1313,7 +1313,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 04:52:08</sys_updated_on>
         <url/>
         <url_target/>
@@ -1323,17 +1323,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Segregate Cost Center Text Data Response">97b64c9e8715e910a3e3cbb4dabb35ff</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"2ecb0f21c38ee11031c77addd401317e","name":"plan","plan_signature":null}}</plan>
-        <snapshot>0a4f9f81c32e211031c77addd40131c4</snapshot>
-        <sys_created_by>admin</sys_created_by>
+        <snapshot>a7c643958366611067a211b6feaad3b8</snapshot>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-07 04:52:13</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2ecb0f21c38ee11031c77addd401317e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-30 13:31:51</sys_updated_on>
+        <sys_updated_by>varun</sys_updated_by>
+        <sys_updated_on>2023-05-01 06:23:22</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1342,7 +1342,7 @@
         <action_template/>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
-        <category/>
+        <category display_value="Procurement">691e0f45c36a61104dcc9d777d01316e</category>
         <copied_from/>
         <copied_from_name/>
         <description>&lt;p&gt;Segregates cost center JSON object to array of object containing text.&lt;/p&gt;
@@ -1389,20 +1389,20 @@
         <outputs/>
         <parent_action display_value="Segregate Cost Center Text Data Response">97b64c9e8715e910a3e3cbb4dabb35ff</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:21</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>21974cde8715e910a3e3cbb4dabb3581</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-01 06:23:20</sys_updated_on>
+        <sys_updated_by>Krishna</sys_updated_by>
+        <sys_updated_on>2023-05-08 05:27:29</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1413,11 +1413,11 @@
         <document_key>21974cde8715e910a3e3cbb4dabb3581</document_key>
         <order>3</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-07 04:52:11</sys_created_on>
         <sys_id>96cb0f21c38ee11031c77addd401310c</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 04:53:52</sys_updated_on>
         <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">ea978cde8715e910a3e3cbb4dabb3512</variable>
@@ -1427,11 +1427,11 @@
         <document_key>21974cde8715e910a3e3cbb4dabb3581</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:25</sys_created_on>
         <sys_id>be978cde8715e910a3e3cbb4dabb352c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:25</sys_updated_on>
         <value/>
         <variable display_value="Total Rows">e2978cde8715e910a3e3cbb4dabb350e</variable>
@@ -1441,11 +1441,11 @@
         <document_key>21974cde8715e910a3e3cbb4dabb3581</document_key>
         <order>3</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:25</sys_created_on>
         <sys_id>fa978cde8715e910a3e3cbb4dabb352c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:25</sys_updated_on>
         <value>0</value>
         <variable display_value="Don't Treat as Error">e2978cde8715e910a3e3cbb4dabb3517</variable>
@@ -1454,11 +1454,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>cost_center_data</field>
         <id>21974cde8715e910a3e3cbb4dabb3581</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:25</sys_created_on>
         <sys_id>f2978cde8715e910a3e3cbb4dabb352c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:25</sys_updated_on>
         <table>var__m_sys_hub_action_output_21974cde8715e910a3e3cbb4dabb3581</table>
         <value>{{step[e83ce4b4-f39c-4384-a724-674c67765aa9].cost_center_data}}</value>
@@ -1466,11 +1466,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>total_rows</field>
         <id>21974cde8715e910a3e3cbb4dabb3581</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:25</sys_created_on>
         <sys_id>7a978cde8715e910a3e3cbb4dabb352c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:25</sys_updated_on>
         <table>var__m_sys_hub_action_output_21974cde8715e910a3e3cbb4dabb3581</table>
         <value>{{step[e83ce4b4-f39c-4384-a724-674c67765aa9].total_rows}}</value>
@@ -1478,11 +1478,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>__action_status__</field>
         <id>21974cde8715e910a3e3cbb4dabb3581</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-07 04:52:11</sys_created_on>
         <sys_id>16cb0f21c38ee11031c77addd401310c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 04:52:11</sys_updated_on>
         <table>var__m_sys_hub_action_output_21974cde8715e910a3e3cbb4dabb3581</table>
         <value/>
@@ -1490,11 +1490,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>__dont_treat_as_error__</field>
         <id>21974cde8715e910a3e3cbb4dabb3581</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:25</sys_created_on>
         <sys_id>b6978cde8715e910a3e3cbb4dabb352c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:25</sys_updated_on>
         <table>var__m_sys_hub_action_output_21974cde8715e910a3e3cbb4dabb3581</table>
         <value/>
@@ -1514,12 +1514,12 @@
         <outputs/>
         <section/>
         <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:23</sys_created_on>
         <sys_id>5e974cde8715e910a3e3cbb4dabb35db</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 04:53:51</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5e974cde8715e910a3e3cbb4dabb35db"/>
@@ -1528,11 +1528,11 @@
         <document_key>5e974cde8715e910a3e3cbb4dabb35db</document_key>
         <order>600</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:24</sys_created_on>
         <sys_id>66978cde8715e910a3e3cbb4dabb3502</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:24</sys_updated_on>
         <value>(function execute(inputs, outputs) {
     var input_json = inputs.inputJSON;
@@ -1548,11 +1548,11 @@
         <document_key>5e974cde8715e910a3e3cbb4dabb35db</document_key>
         <order>400</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:24</sys_created_on>
         <sys_id>a2978cde8715e910a3e3cbb4dabb3502</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:24</sys_updated_on>
         <value>35aa573fd7802200bdbaee5b5e610375</value>
         <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
@@ -1561,11 +1561,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>delimeter</field>
         <id>5e974cde8715e910a3e3cbb4dabb35db</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:24</sys_created_on>
         <sys_id>ee978cde8715e910a3e3cbb4dabb3502</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:24</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_5e974cde8715e910a3e3cbb4dabb35db</table>
         <value>{{action.delimeter}}</value>
@@ -1573,11 +1573,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>inputJSON</field>
         <id>5e974cde8715e910a3e3cbb4dabb35db</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:24</sys_created_on>
         <sys_id>a2978cde8715e910a3e3cbb4dabb3503</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:24</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_5e974cde8715e910a3e3cbb4dabb35db</table>
         <value>{{action.json_string}}</value>
@@ -1645,7 +1645,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:23</sys_created_on>
         <sys_id>52974cde8715e910a3e3cbb4dabb35df</sys_id>
         <sys_mod_count>1</sys_mod_count>
@@ -1654,7 +1654,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 04:53:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1728,7 +1728,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:24</sys_created_on>
         <sys_id>5a974cde8715e910a3e3cbb4dabb35e3</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1737,7 +1737,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1812,7 +1812,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:24</sys_created_on>
         <sys_id>12974cde8715e910a3e3cbb4dabb35ea</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1821,7 +1821,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1895,7 +1895,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:24</sys_created_on>
         <sys_id>16974cde8715e910a3e3cbb4dabb35fb</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1904,7 +1904,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1929,7 +1929,7 @@
         <name>var__m_sys_hub_step_ext_output_5e974cde8715e910a3e3cbb4dabb35db</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:24</sys_created_on>
         <sys_id>56974cde8715e910a3e3cbb4dabb35fa</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1938,7 +1938,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:24</sys_updated_on>
         <url/>
         <url_target/>
@@ -1952,7 +1952,7 @@
         <name>var__m_sys_hub_step_ext_output_5e974cde8715e910a3e3cbb4dabb35db</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:24</sys_created_on>
         <sys_id>66974cde8715e910a3e3cbb4dabb35fe</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1961,7 +1961,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:24</sys_updated_on>
         <url/>
         <url_target/>
@@ -2027,7 +2027,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:23</sys_created_on>
         <sys_id>06974cde8715e910a3e3cbb4dabb3586</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2036,7 +2036,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2111,7 +2111,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:23</sys_created_on>
         <sys_id>12974cde8715e910a3e3cbb4dabb35d6</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2120,7 +2120,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2198,7 +2198,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:25</sys_created_on>
         <sys_id>e2978cde8715e910a3e3cbb4dabb350e</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2207,7 +2207,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2285,7 +2285,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:25</sys_created_on>
         <sys_id>e2978cde8715e910a3e3cbb4dabb3517</sys_id>
         <sys_mod_count>2</sys_mod_count>
@@ -2294,7 +2294,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 04:52:11</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2372,7 +2372,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:24</sys_created_on>
         <sys_id>ea978cde8715e910a3e3cbb4dabb3508</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2381,7 +2381,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2459,7 +2459,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:25</sys_created_on>
         <sys_id>ea978cde8715e910a3e3cbb4dabb3512</sys_id>
         <sys_mod_count>1</sys_mod_count>
@@ -2468,7 +2468,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 04:52:11</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2488,14 +2488,14 @@
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=21974cde8715e910a3e3cbb4dabb3581^sys_idNOT INfa978cde8715e910a3e3cbb4dabb352f"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
         <action_type_id display_value="Segregate Cost Center Text Data Response">21974cde8715e910a3e3cbb4dabb3581</action_type_id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:25</sys_created_on>
         <sys_id>fa978cde8715e910a3e3cbb4dabb352f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:25</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=fa978cde8715e910a3e3cbb4dabb352f^sys_idNOT IN6fc643958366611067a211b6feaad3b7"/>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=fa978cde8715e910a3e3cbb4dabb352f^sys_idNOT IN7d2d72efc32625108e4f2a1ad00131f6"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2023-03-02 07:43:25">fa978cde8715e910a3e3cbb4dabb352f</action_status_metadata_id>
         <condition>{{step[e83ce4b4-f39c-4384-a724-674c67765aa9].__step_status__.code}}!=0</condition>
@@ -2503,12 +2503,12 @@
         <label>Processing Input String</label>
         <order>1</order>
         <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{\\\"code\\\":\\\"{{step[e83ce4b4-f39c-4384-a724-674c67765aa9].__step_status__.code}}\\\"}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[e83ce4b4-f39c-4384-a724-674c67765aa9].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-05-01 06:23:21</sys_created_on>
-        <sys_id>6fc643958366611067a211b6feaad3b7</sys_id>
+        <sys_created_by>Krishna</sys_created_by>
+        <sys_created_on>2023-05-08 05:27:30</sys_created_on>
+        <sys_id>7d2d72efc32625108e4f2a1ad00131f6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-01 06:23:21</sys_updated_on>
+        <sys_updated_by>Krishna</sys_updated_by>
+        <sys_updated_on>2023-05-08 05:27:30</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_21974cde8715e910a3e3cbb4dabb3581^sys_idNOT IN52974cde8715e910a3e3cbb4dabb35d5,5a974cde8715e910a3e3cbb4dabb35d9"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -2520,7 +2520,7 @@
         <name>var__m_sys_hub_action_input_21974cde8715e910a3e3cbb4dabb3581</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:23</sys_created_on>
         <sys_id>52974cde8715e910a3e3cbb4dabb35d5</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2529,7 +2529,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:23</sys_updated_on>
         <url/>
         <url_target/>
@@ -2543,7 +2543,7 @@
         <name>var__m_sys_hub_action_input_21974cde8715e910a3e3cbb4dabb3581</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:23</sys_created_on>
         <sys_id>5a974cde8715e910a3e3cbb4dabb35d9</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2552,7 +2552,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:23</sys_updated_on>
         <url/>
         <url_target/>
@@ -2568,7 +2568,7 @@
         <name>var__m_sys_hub_action_output_21974cde8715e910a3e3cbb4dabb3581</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:25</sys_created_on>
         <sys_id>26978cde8715e910a3e3cbb4dabb350d</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2577,7 +2577,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:25</sys_updated_on>
         <url/>
         <url_target/>
@@ -2591,7 +2591,7 @@
         <name>var__m_sys_hub_action_output_21974cde8715e910a3e3cbb4dabb3581</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:25</sys_created_on>
         <sys_id>26978cde8715e910a3e3cbb4dabb3516</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2600,7 +2600,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:25</sys_updated_on>
         <url/>
         <url_target/>
@@ -2614,7 +2614,7 @@
         <name>var__m_sys_hub_action_output_21974cde8715e910a3e3cbb4dabb3581</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:25</sys_created_on>
         <sys_id>2e978cde8715e910a3e3cbb4dabb3511</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2623,7 +2623,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:25</sys_updated_on>
         <url/>
         <url_target/>
@@ -2637,7 +2637,7 @@
         <name>var__m_sys_hub_action_output_21974cde8715e910a3e3cbb4dabb3581</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-03-02 15:43:25</sys_created_on>
         <sys_id>66978cde8715e910a3e3cbb4dabb3529</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2646,7 +2646,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Varun</sys_updated_by>
         <sys_updated_on>2023-03-02 15:43:25</sys_updated_on>
         <url/>
         <url_target/>

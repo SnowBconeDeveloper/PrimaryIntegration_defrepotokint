@@ -7,113 +7,115 @@
         <active>true</active>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
-        <category/>
+        <category display_value="Procurement">691e0f45c36a61104dcc9d777d01316e</category>
         <copied_from>907ba6cb475e991086887562846d43fe</copied_from>
         <copied_from_name>Segregate Legal Entity Response</copied_from_name>
-        <description>&lt;p&gt;Segregates cost center JSON object to array of object.&lt;/p&gt;
+        <description>&lt;p&gt;Segregates&amp;nbsp;legal entity JSON object to array of object.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Inputs&lt;/strong&gt; :&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;JSON String&lt;/strong&gt;&amp;nbsp;- SAP cost center JSON payload.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Delimiter&lt;/strong&gt; - Character that separate strings&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON String&lt;/strong&gt;&amp;nbsp;- SAP legal entity JSON payload.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Delimiter&lt;/strong&gt; - Character that separate strings&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Outputs&lt;/strong&gt; :&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Cost Center&amp;nbsp;&lt;/strong&gt;- Array of objects containing below fields:&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;strong&gt;Cost Center&lt;/strong&gt;&amp;nbsp;- Objects containing these fields:
-        &lt;ul&gt;
-          &lt;li&gt;Cost Center&lt;/li&gt;
-          &lt;li&gt;Controlling Area&lt;/li&gt;
-          &lt;li&gt;Lock Indicator for Plan Primary Cost&lt;/li&gt;
-          &lt;li&gt;Company Code&lt;/li&gt;
-          &lt;li&gt;Profit Center&lt;/li&gt;
-          &lt;li&gt;Valid to Date&lt;/li&gt;
-          &lt;li&gt;Valid from Date&lt;/li&gt;
-          &lt;li&gt;Cost Center Category&lt;/li&gt;
-          &lt;li&gt;User Responsible&lt;/li&gt;
-          &lt;li&gt;Name1&lt;/li&gt;
-          &lt;li&gt;Postal Code&lt;/li&gt;
-          &lt;li&gt;Currency Key&lt;/li&gt;
-          &lt;li&gt;Lock Indicator for Actual Primary Postings&lt;/li&gt;
-          &lt;li&gt;Business Area&lt;/li&gt;
-          &lt;li&gt;Person Responsible&lt;/li&gt;
-          &lt;li&gt;Costing Sheet&lt;/li&gt;
-          &lt;li&gt;Tax Jurisdiction&lt;/li&gt;
-          &lt;li&gt;Plant&lt;/li&gt;
-          &lt;li&gt;Logical System&lt;/li&gt;
-          &lt;li&gt;Created on&lt;/li&gt;
-          &lt;li&gt;Entered by&lt;/li&gt;
-          &lt;li&gt;Lock Indicator for Actual Secondary Costs&lt;/li&gt;
-          &lt;li&gt;Lock Indicator for Actual Revenue Postings&lt;/li&gt;
-          &lt;li&gt;Lock Indicator for Commitment Update&lt;/li&gt;
-          &lt;li&gt;Lock Indicator for Plan Secondary Costs&lt;/li&gt;
-          &lt;li&gt;Lock Indicator for Planning Revenues&lt;/li&gt;
-          &lt;li&gt;Indicator for Allowed Allocation Methods&lt;/li&gt;
-          &lt;li&gt;Indicator for Recording Consumption Quantities&lt;/li&gt;
-          &lt;li&gt;Department&lt;/li&gt;
-          &lt;li&gt;Subsequent cost center&lt;/li&gt;
-          &lt;li&gt;Usage of the condition table&lt;/li&gt;
-          &lt;li&gt;Application&lt;/li&gt;
-          &lt;li&gt;CO-CCA Overhead Key&lt;/li&gt;
-          &lt;li&gt;Country Key&lt;/li&gt;
-          &lt;li&gt;Title&lt;/li&gt;
-          &lt;li&gt;Name 2&lt;/li&gt;
-          &lt;li&gt;Name 3&lt;/li&gt;
-          &lt;li&gt;Name 4&lt;/li&gt;
-          &lt;li&gt;City&lt;/li&gt;
-          &lt;li&gt;District&lt;/li&gt;
-          &lt;li&gt;Street and House Number&lt;/li&gt;
-          &lt;li&gt;Post office box&lt;/li&gt;
-          &lt;li&gt;P.O. Box Postal Code&lt;/li&gt;
-          &lt;li&gt;Region (State, Province, County)&lt;/li&gt;
-          &lt;li&gt;Language Key&lt;/li&gt;
-          &lt;li&gt;Telebox number&lt;/li&gt;
-          &lt;li&gt;First telephone number&lt;/li&gt;
-          &lt;li&gt;Second telephone number&lt;/li&gt;
-          &lt;li&gt;Fax Number&lt;/li&gt;
-          &lt;li&gt;Teletex number&lt;/li&gt;
-          &lt;li&gt;Telex number&lt;/li&gt;
-          &lt;li&gt;Data communication line number.&lt;/li&gt;
-          &lt;li&gt;Printer destination for CCtr report&lt;/li&gt;
-          &lt;li&gt;Standard Hierarchy Area&lt;/li&gt;
-          &lt;li&gt;Cost collector key&lt;/li&gt;
-          &lt;li&gt;Completion flag for the cost center master record&lt;/li&gt;
-          &lt;li&gt;Indicator. object is statistical&lt;/li&gt;
-          &lt;li&gt;Object number&lt;/li&gt;
-          &lt;li&gt;Function of cost center&lt;/li&gt;
-          &lt;li&gt;Alternative function of cost center&lt;/li&gt;
-          &lt;li&gt;Template for Activity-Independent Formula Planning&lt;/li&gt;
-          &lt;li&gt;Template for Activity-Dependent Formula Planning&lt;/li&gt;
-          &lt;li&gt;Functional Area&lt;/li&gt;
-          &lt;li&gt;Template: Activity-Independent Allocation to Cost Center&lt;/li&gt;
-          &lt;li&gt;Template: Activity-Dependent Allocation to Cost Center&lt;/li&gt;
-          &lt;li&gt;Template: Actual Statistical Key Figure on Cost Center&lt;/li&gt;
-          &lt;li&gt;Template: Act. Stat. Key Figure - Cost Center/Activity Type&lt;/li&gt;
-          &lt;li&gt;Joint venture&lt;/li&gt;
-          &lt;li&gt;Recovery Indicator&lt;/li&gt;
-          &lt;li&gt;Equity type&lt;/li&gt;
-          &lt;li&gt;Joint Venture Object Type&lt;/li&gt;
-          &lt;li&gt;JIB/JIBE Class&lt;/li&gt;
-          &lt;li&gt;JIB/JIBE Subclass A&lt;/li&gt;
-          &lt;li&gt;Append structure for Regulatory Reporting&lt;/li&gt;
-          &lt;li&gt;Regulatory indicator&lt;/li&gt;
-          &lt;li&gt;Client&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;legal Entity&amp;nbsp;&lt;/strong&gt;- Array of objects containing below fields:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Legal Entity Data&lt;/strong&gt;&amp;nbsp;- Objects containing these fields:
+&lt;ul&gt;
+&lt;li&gt;Client&lt;/li&gt;
+&lt;li&gt;Company Code&lt;/li&gt;
+&lt;li&gt;Name of Company Code or Company&lt;/li&gt;
+&lt;li&gt;City&lt;/li&gt;
+&lt;li&gt;Country Key&lt;/li&gt;
+&lt;li&gt;Currency Key&lt;/li&gt;
+&lt;li&gt;Language Key&lt;/li&gt;
+&lt;li&gt;Chart of Accounts&lt;/li&gt;
+&lt;li&gt;Maximum exchange rate deviation in percent&lt;/li&gt;
+&lt;li&gt;Fiscal Year Variant&lt;/li&gt;
+&lt;li&gt;Allocation Indicator&lt;/li&gt;
+&lt;li&gt;Company&lt;/li&gt;
+&lt;li&gt;Address&lt;/li&gt;
+&lt;li&gt;Value added tax registration number&lt;/li&gt;
+&lt;li&gt;Financial Management Area&lt;/li&gt;
+&lt;li&gt;Indicator: Project Cash Management active?&lt;/li&gt;
+&lt;li&gt;Activate Update in Funds Management&lt;/li&gt;
+&lt;li&gt;Jurisdiction for tax calculation - tax jurisdiction code&lt;/li&gt;
+&lt;li&gt;Funds center can be assigned to an account in HR from&lt;/li&gt;
+&lt;li&gt;Company Code Variant (Screen)&lt;/li&gt;
+&lt;li&gt;Cash Management and Forecast Company Code&lt;/li&gt;
+&lt;li&gt;Credit control area&lt;/li&gt;
+&lt;li&gt;Rules for Copying from the Sample Account for G/L Accounts&lt;/li&gt;
+&lt;li&gt;Original Key of the Company Code&lt;/li&gt;
+&lt;li&gt;Chart of Accounts According to Country Legislation&lt;/li&gt;
+&lt;li&gt;Sales/Purchases Tax Group&lt;/li&gt;
+&lt;li&gt;Name of global company code&lt;/li&gt;
+&lt;li&gt;Field Status Variant&lt;/li&gt;
+&lt;li&gt;Posting Period Variant&lt;/li&gt;
+&lt;li&gt;Foreign Currency Translation for Tax Items&lt;/li&gt;
+&lt;li&gt;Workflow variant&lt;/li&gt;
+&lt;li&gt;G/L account authorization check in inventory management&lt;/li&gt;
+&lt;li&gt;G/L account authorization check in PO/scheduling agreement&lt;/li&gt;
+&lt;li&gt;G/L account authorization check in purchase requisitions&lt;/li&gt;
+&lt;li&gt;G/L account authorization check in contracts&lt;/li&gt;
+&lt;li&gt;Input Tax Code for Non-Taxable Transactions&lt;/li&gt;
+&lt;li&gt;Output Tax Code for Non-Taxable Transactions&lt;/li&gt;
+&lt;li&gt;Foreign Trade: Import Data Control in MM Purchase Orders&lt;/li&gt;
+&lt;li&gt;Procedure for Setting the Posting Date&lt;/li&gt;
+&lt;li&gt;Inflation Method&lt;/li&gt;
+&lt;li&gt;Funds reservation field status var.&lt;/li&gt;
+&lt;li&gt;Foreign trade: Import data copying control for GR&lt;/li&gt;
+&lt;li&gt;Method for offsetting account determination&lt;/li&gt;
+&lt;li&gt;Additional settings variant for bus.area financial statemnts&lt;/li&gt;
+&lt;li&gt;Cost of sales accounting status&lt;/li&gt;
+&lt;li&gt;Accounts Receivable Pledging Active&lt;/li&gt;
+&lt;li&gt;Enable Amount Split&lt;/li&gt;
+&lt;li&gt;Surcharge Calculation Method&lt;/li&gt;
+&lt;li&gt;Document Type for Provisions for Taxes on Services Received&lt;/li&gt;
+&lt;li&gt;Document Type for Journal Voucher (Amount Correction)&lt;/li&gt;
+&lt;li&gt;Document Type for Journal Voucher (Tax Code Correction)&lt;/li&gt;
+&lt;li&gt;Document Type for Remittance Challans&lt;/li&gt;
+&lt;li&gt;Deferred Tax Rule&lt;/li&gt;
+&lt;li&gt;Tax Reporting Date Active in Documents&lt;/li&gt;
+&lt;li&gt;Manage Variant of Posting Period for Company Code/Ledger&lt;/li&gt;
+&lt;li&gt;G/L account authorization check in shopping cart&lt;/li&gt;
+&lt;li&gt;Hide Entry in Value Help&lt;/li&gt;
+&lt;li&gt;Activate Account Assignment Derivation in Funds Management&lt;/li&gt;
+&lt;li&gt;Indicator: Cash budget management active&lt;/li&gt;
+&lt;li&gt;Indicator: Cash Management activated?&lt;/li&gt;
+&lt;li&gt;Indicator: Propose current date as value date?&lt;/li&gt;
+&lt;li&gt;Indicator: Discount base amount is the net value&lt;/li&gt;
+&lt;li&gt;Indicator: Base amount for tax is net of discount?&lt;/li&gt;
+&lt;li&gt;Indicator: Business area financial statements required?&lt;/li&gt;
+&lt;li&gt;Indicator: Propose fiscal year?&lt;/li&gt;
+&lt;li&gt;Indicator: Post translations for exchange rate differences?&lt;/li&gt;
+&lt;li&gt;Indicator: Productive company code?&lt;/li&gt;
+&lt;li&gt;Indicator: Purchase Account Processing is Active&lt;/li&gt;
+&lt;li&gt;Indicator: JVA Active&lt;/li&gt;
+&lt;li&gt;Indicator: Financial Assets Management active&lt;/li&gt;
+&lt;li&gt;Indicator: No ex.rate difference when clearing in local crcy&lt;/li&gt;
+&lt;li&gt;Indicator: Updating MM in Cash Mgmt/Forecast activated?&lt;/li&gt;
+&lt;li&gt;Indicator: Updating SD in Cash Mgmt/Forecast activated?&lt;/li&gt;
+&lt;li&gt;Indicator: Company code is in another system&lt;/li&gt;
+&lt;li&gt;Indicator: hedge request active&lt;/li&gt;
+&lt;li&gt;Indicator: Document date as the basis for tax determination&lt;/li&gt;
+&lt;li&gt;Indicator: Negative Postings Permitted&lt;/li&gt;
+&lt;li&gt;Indicator: Can credit control area be overwritten?&lt;/li&gt;
+&lt;li&gt;Indicator: Extended withholding tax active&lt;/li&gt;
+&lt;li&gt;Foreign Trade: Screen ctrl of imp.data f. MM-goods rececipt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Total Rows -&lt;/strong&gt; Return the total number of records present in SAP Payload.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;strong&gt;Action Status&amp;nbsp;&lt;/strong&gt;-&amp;nbsp;Object containing following fields:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Code&lt;/strong&gt;&amp;nbsp;- If the request is executed successfully, code will be set to 0 but if the request failed, code will be set to 1.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Message&lt;/strong&gt;&amp;nbsp;- Reason for error. Populated only when an error occurs.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Total Rows -&lt;/strong&gt; Return the total number of records present in SAP Payload.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Action Status&amp;nbsp;&lt;/strong&gt;-&amp;nbsp;Object containing following fields:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Code&lt;/strong&gt;&amp;nbsp;- If the request is executed successfully, code will be set to 0 but if the request failed, code will be set to 1.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Message&lt;/strong&gt;&amp;nbsp;- Reason for error. Populated only when an error occurs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Requires a subscription for production use. &lt;a href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <ih_action>false</ih_action>
@@ -127,7 +129,7 @@
         <pre_compiled>false</pre_compiled>
         <state>published</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:49</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
@@ -140,7 +142,7 @@
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_11b5b367474f115086887562846d436a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-01 07:51:31</sys_updated_on>
+        <sys_updated_on>2023-05-08 13:49:49</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -151,11 +153,11 @@
         <document_key>11b5b367474f115086887562846d436a</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:56</sys_created_on>
         <sys_id>07b5f367474f115086887562846d430a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 09:54:56</sys_updated_on>
         <value>0</value>
         <variable display_value="Don't Treat as Error">3ab5b367474f115086887562846d43d6</variable>
@@ -165,11 +167,11 @@
         <document_key>11b5b367474f115086887562846d436a</document_key>
         <order>4</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-28 06:53:06</sys_created_on>
         <sys_id>6e78e06987c4ad10a3e3cbb4dabb35ba</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2022-12-28 06:53:06</sys_updated_on>
         <value/>
         <variable display_value="Total Rows">9e78e06987c4ad10a3e3cbb4dabb35b2</variable>
@@ -179,11 +181,11 @@
         <document_key>11b5b367474f115086887562846d436a</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:56</sys_created_on>
         <sys_id>c7b5f367474f115086887562846d430a</sys_id>
         <sys_mod_count>4</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 06:13:06</sys_updated_on>
         <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD1ab5b367954f1150b3a27f0df6da12cc":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD1ab5b367954f1150b3a27f0df6da12cc.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"9a533bff-af67-4fe4-89ee-642c77000ad7\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD1ab5b367954f1150b3a27f0df6da12cc\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">a2b5b367474f115086887562846d43d1</variable>
@@ -192,11 +194,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>legal_entity</field>
         <id>11b5b367474f115086887562846d436a</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:56</sys_created_on>
         <sys_id>8fb5b367474f115086887562846d43f0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 09:54:56</sys_updated_on>
         <table>var__m_sys_hub_action_output_11b5b367474f115086887562846d436a</table>
         <value>{{step[455dde94-66a4-459e-a9be-dfbc8ab07665].legal_entity}}</value>
@@ -204,11 +206,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>total_rows</field>
         <id>11b5b367474f115086887562846d436a</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-16 12:25:00</sys_created_on>
         <sys_id>fea1e14447d7915086887562846d432a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-16 12:25:00</sys_updated_on>
         <table>var__m_sys_hub_action_output_11b5b367474f115086887562846d436a</table>
         <value>{{step[455dde94-66a4-459e-a9be-dfbc8ab07665].total_rows}}</value>
@@ -216,11 +218,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>__action_status__</field>
         <id>11b5b367474f115086887562846d436a</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:56</sys_created_on>
         <sys_id>83b5f367474f115086887562846d430a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 09:54:56</sys_updated_on>
         <table>var__m_sys_hub_action_output_11b5b367474f115086887562846d436a</table>
         <value/>
@@ -228,11 +230,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>__dont_treat_as_error__</field>
         <id>11b5b367474f115086887562846d436a</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:56</sys_created_on>
         <sys_id>cfb5f367474f115086887562846d4309</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 09:54:56</sys_updated_on>
         <table>var__m_sys_hub_action_output_11b5b367474f115086887562846d436a</table>
         <value/>
@@ -252,12 +254,12 @@
         <outputs/>
         <section/>
         <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:51</sys_created_on>
         <sys_id>bdb5b367474f115086887562846d4382</sys_id>
         <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2023-01-03 06:45:19</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=bdb5b367474f115086887562846d4382"/>
@@ -266,11 +268,11 @@
         <document_key>bdb5b367474f115086887562846d4382</document_key>
         <order>600</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:54</sys_created_on>
         <sys_id>16b5b367474f115086887562846d43bc</sys_id>
         <sys_mod_count>8</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2023-01-03 06:45:19</sys_updated_on>
         <value>(function execute(inputs, outputs) {
     var input_json = inputs.json_string;
@@ -286,11 +288,11 @@
         <document_key>bdb5b367474f115086887562846d4382</document_key>
         <order>400</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:53</sys_created_on>
         <sys_id>5eb5b367474f115086887562846d43bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 09:54:53</sys_updated_on>
         <value>35aa573fd7802200bdbaee5b5e610375</value>
         <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
@@ -299,11 +301,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>delimiter</field>
         <id>bdb5b367474f115086887562846d4382</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 10:12:38</sys_created_on>
         <sys_id>1ec9b32f474f115086887562846d43dd</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 10:12:38</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_bdb5b367474f115086887562846d4382</table>
         <value>{{action.delimiter}}</value>
@@ -311,11 +313,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>json</field>
         <id>bdb5b367474f115086887562846d4382</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 10:12:38</sys_created_on>
         <sys_id>5ac9b32f474f115086887562846d43dd</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 10:12:38</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_bdb5b367474f115086887562846d4382</table>
         <value>{{action.json_string}}</value>
@@ -323,11 +325,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>json_obj</field>
         <id>bdb5b367474f115086887562846d4382</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:54</sys_created_on>
         <sys_id>92b5b367474f115086887562846d43bd</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 09:54:54</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_bdb5b367474f115086887562846d4382</table>
         <value>{{action.json_string}}</value>
@@ -335,11 +337,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>json_string</field>
         <id>bdb5b367474f115086887562846d4382</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-01-03 06:45:20</sys_created_on>
         <sys_id>0b302f9787c02550a3e3cbb4dabb35be</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2023-01-03 06:45:20</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_bdb5b367474f115086887562846d4382</table>
         <value>{{action.json_string}}</value>
@@ -407,7 +409,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-01-03 06:45:17</sys_created_on>
         <sys_id>66302f9787c02550a3e3cbb4dabb35a9</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -416,7 +418,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2023-01-03 06:45:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -490,7 +492,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 10:12:35</sys_created_on>
         <sys_id>d1c9b32f474f115086887562846d433f</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -499,7 +501,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 10:12:35</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -574,7 +576,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:53</sys_created_on>
         <sys_id>0ab5b367474f115086887562846d43b3</sys_id>
         <sys_mod_count>1</sys_mod_count>
@@ -583,7 +585,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 10:12:37</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -657,7 +659,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-16 12:21:49</sys_created_on>
         <sys_id>8cf0e10447d7915086887562846d43d2</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -666,7 +668,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-16 12:21:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -691,7 +693,7 @@
         <name>var__m_sys_hub_step_ext_output_bdb5b367474f115086887562846d4382</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:53</sys_created_on>
         <sys_id>86b5b367474f115086887562846d43b7</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -700,7 +702,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 09:54:53</sys_updated_on>
         <url/>
         <url_target/>
@@ -714,7 +716,7 @@
         <name>var__m_sys_hub_step_ext_output_bdb5b367474f115086887562846d4382</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-16 12:21:49</sys_created_on>
         <sys_id>d4f0e10447d7915086887562846d43d6</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -723,7 +725,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-16 12:21:49</sys_updated_on>
         <url/>
         <url_target/>
@@ -789,7 +791,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:50</sys_created_on>
         <sys_id>61b5b367474f115086887562846d4370</sys_id>
         <sys_mod_count>2</sys_mod_count>
@@ -798,7 +800,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2023-01-03 06:45:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -873,7 +875,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 10:12:32</sys_created_on>
         <sys_id>f4c9732f474f115086887562846d430f</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -882,7 +884,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 10:12:32</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -960,7 +962,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:55</sys_created_on>
         <sys_id>3ab5b367474f115086887562846d43d6</sys_id>
         <sys_mod_count>1</sys_mod_count>
@@ -969,7 +971,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 09:54:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1047,7 +1049,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-28 06:53:05</sys_created_on>
         <sys_id>9e78e06987c4ad10a3e3cbb4dabb35b2</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1056,7 +1058,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2022-12-28 06:53:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1134,7 +1136,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:55</sys_created_on>
         <sys_id>a2b5b367474f115086887562846d43d1</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1143,7 +1145,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 09:54:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1221,7 +1223,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:56</sys_created_on>
         <sys_id>b2b5b367474f115086887562846d43ea</sys_id>
         <sys_mod_count>1</sys_mod_count>
@@ -1230,7 +1232,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 10:12:40</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1250,11 +1252,11 @@
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=11b5b367474f115086887562846d436a^sys_idNOT IN0bb5f367474f115086887562846d430c"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
         <action_type_id display_value="Segregate Legal Entity Response">11b5b367474f115086887562846d436a</action_type_id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:57</sys_created_on>
         <sys_id>0bb5f367474f115086887562846d430c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 09:54:57</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=0bb5f367474f115086887562846d430c^sys_idNOT IN03b5f367474f115086887562846d430d"/>
@@ -1265,11 +1267,11 @@
         <label>Segregate Legal Entity step fails</label>
         <order>1</order>
         <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{\\\"code\\\":\\\"{{step[455dde94-66a4-459e-a9be-dfbc8ab07665].__step_status__.code}}\\\"}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[455dde94-66a4-459e-a9be-dfbc8ab07665].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:57</sys_created_on>
         <sys_id>03b5f367474f115086887562846d430d</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 06:13:07</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_11b5b367474f115086887562846d436a^sys_idNOT IN31b5b367474f115086887562846d4381,c5c9732f474f115086887562846d4313"/>
@@ -1282,7 +1284,7 @@
         <name>var__m_sys_hub_action_input_11b5b367474f115086887562846d436a</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:51</sys_created_on>
         <sys_id>31b5b367474f115086887562846d4381</sys_id>
         <sys_mod_count>1</sys_mod_count>
@@ -1291,7 +1293,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2023-01-03 06:45:16</sys_updated_on>
         <url/>
         <url_target/>
@@ -1305,7 +1307,7 @@
         <name>var__m_sys_hub_action_input_11b5b367474f115086887562846d436a</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 10:12:33</sys_created_on>
         <sys_id>c5c9732f474f115086887562846d4313</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1314,7 +1316,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 10:12:33</sys_updated_on>
         <url/>
         <url_target/>
@@ -1330,7 +1332,7 @@
         <name>var__m_sys_hub_action_output_11b5b367474f115086887562846d436a</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-28 06:53:05</sys_created_on>
         <sys_id>1278e06987c4ad10a3e3cbb4dabb35b7</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1339,7 +1341,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2022-12-28 06:53:05</sys_updated_on>
         <url/>
         <url_target/>
@@ -1353,7 +1355,7 @@
         <name>var__m_sys_hub_action_output_11b5b367474f115086887562846d436a</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:56</sys_created_on>
         <sys_id>72b5b367474f115086887562846d43ee</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1362,7 +1364,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 09:54:56</sys_updated_on>
         <url/>
         <url_target/>
@@ -1376,7 +1378,7 @@
         <name>var__m_sys_hub_action_output_11b5b367474f115086887562846d436a</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:55</sys_created_on>
         <sys_id>7ab5b367474f115086887562846d43d5</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1385,7 +1387,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 09:54:55</sys_updated_on>
         <url/>
         <url_target/>
@@ -1399,7 +1401,7 @@
         <name>var__m_sys_hub_action_output_11b5b367474f115086887562846d436a</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 09:54:56</sys_created_on>
         <sys_id>f2b5b367474f115086887562846d43e9</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1408,7 +1410,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 09:54:56</sys_updated_on>
         <url/>
         <url_target/>
@@ -1418,17 +1420,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Segregate Legal Entity Response">11b5b367474f115086887562846d436a</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"c00a883b47cf115086887562846d434d","name":"plan","plan_signature":null}}</plan>
-        <snapshot>f51e5b41c32e211031c77addd4013188</snapshot>
-        <sys_created_by>admin</sys_created_by>
+        <snapshot>da46eca1832e611067a211b6feaad361</snapshot>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:29</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c00a883b47cf115086887562846d434d</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-30 13:26:39</sys_updated_on>
+        <sys_updated_by>varun</sys_updated_by>
+        <sys_updated_on>2023-05-01 13:20:33</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1437,113 +1439,115 @@
         <action_template/>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
-        <category/>
+        <category display_value="Procurement">691e0f45c36a61104dcc9d777d01316e</category>
         <copied_from/>
         <copied_from_name/>
-        <description>&lt;p&gt;Segregates cost center JSON object to array of object.&lt;/p&gt;
+        <description>&lt;p&gt;Segregates&amp;nbsp;legal entity JSON object to array of object.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Inputs&lt;/strong&gt; :&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;JSON String&lt;/strong&gt;&amp;nbsp;- SAP cost center JSON payload.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Delimiter&lt;/strong&gt; - Character that separate strings&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON String&lt;/strong&gt;&amp;nbsp;- SAP legal entity JSON payload.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Delimiter&lt;/strong&gt; - Character that separate strings&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Outputs&lt;/strong&gt; :&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Cost Center&amp;nbsp;&lt;/strong&gt;- Array of objects containing below fields:&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;strong&gt;Cost Center&lt;/strong&gt;&amp;nbsp;- Objects containing these fields:
-        &lt;ul&gt;
-          &lt;li&gt;Cost Center&lt;/li&gt;
-          &lt;li&gt;Controlling Area&lt;/li&gt;
-          &lt;li&gt;Lock Indicator for Plan Primary Cost&lt;/li&gt;
-          &lt;li&gt;Company Code&lt;/li&gt;
-          &lt;li&gt;Profit Center&lt;/li&gt;
-          &lt;li&gt;Valid to Date&lt;/li&gt;
-          &lt;li&gt;Valid from Date&lt;/li&gt;
-          &lt;li&gt;Cost Center Category&lt;/li&gt;
-          &lt;li&gt;User Responsible&lt;/li&gt;
-          &lt;li&gt;Name1&lt;/li&gt;
-          &lt;li&gt;Postal Code&lt;/li&gt;
-          &lt;li&gt;Currency Key&lt;/li&gt;
-          &lt;li&gt;Lock Indicator for Actual Primary Postings&lt;/li&gt;
-          &lt;li&gt;Business Area&lt;/li&gt;
-          &lt;li&gt;Person Responsible&lt;/li&gt;
-          &lt;li&gt;Costing Sheet&lt;/li&gt;
-          &lt;li&gt;Tax Jurisdiction&lt;/li&gt;
-          &lt;li&gt;Plant&lt;/li&gt;
-          &lt;li&gt;Logical System&lt;/li&gt;
-          &lt;li&gt;Created on&lt;/li&gt;
-          &lt;li&gt;Entered by&lt;/li&gt;
-          &lt;li&gt;Lock Indicator for Actual Secondary Costs&lt;/li&gt;
-          &lt;li&gt;Lock Indicator for Actual Revenue Postings&lt;/li&gt;
-          &lt;li&gt;Lock Indicator for Commitment Update&lt;/li&gt;
-          &lt;li&gt;Lock Indicator for Plan Secondary Costs&lt;/li&gt;
-          &lt;li&gt;Lock Indicator for Planning Revenues&lt;/li&gt;
-          &lt;li&gt;Indicator for Allowed Allocation Methods&lt;/li&gt;
-          &lt;li&gt;Indicator for Recording Consumption Quantities&lt;/li&gt;
-          &lt;li&gt;Department&lt;/li&gt;
-          &lt;li&gt;Subsequent cost center&lt;/li&gt;
-          &lt;li&gt;Usage of the condition table&lt;/li&gt;
-          &lt;li&gt;Application&lt;/li&gt;
-          &lt;li&gt;CO-CCA Overhead Key&lt;/li&gt;
-          &lt;li&gt;Country Key&lt;/li&gt;
-          &lt;li&gt;Title&lt;/li&gt;
-          &lt;li&gt;Name 2&lt;/li&gt;
-          &lt;li&gt;Name 3&lt;/li&gt;
-          &lt;li&gt;Name 4&lt;/li&gt;
-          &lt;li&gt;City&lt;/li&gt;
-          &lt;li&gt;District&lt;/li&gt;
-          &lt;li&gt;Street and House Number&lt;/li&gt;
-          &lt;li&gt;Post office box&lt;/li&gt;
-          &lt;li&gt;P.O. Box Postal Code&lt;/li&gt;
-          &lt;li&gt;Region (State, Province, County)&lt;/li&gt;
-          &lt;li&gt;Language Key&lt;/li&gt;
-          &lt;li&gt;Telebox number&lt;/li&gt;
-          &lt;li&gt;First telephone number&lt;/li&gt;
-          &lt;li&gt;Second telephone number&lt;/li&gt;
-          &lt;li&gt;Fax Number&lt;/li&gt;
-          &lt;li&gt;Teletex number&lt;/li&gt;
-          &lt;li&gt;Telex number&lt;/li&gt;
-          &lt;li&gt;Data communication line number.&lt;/li&gt;
-          &lt;li&gt;Printer destination for CCtr report&lt;/li&gt;
-          &lt;li&gt;Standard Hierarchy Area&lt;/li&gt;
-          &lt;li&gt;Cost collector key&lt;/li&gt;
-          &lt;li&gt;Completion flag for the cost center master record&lt;/li&gt;
-          &lt;li&gt;Indicator. object is statistical&lt;/li&gt;
-          &lt;li&gt;Object number&lt;/li&gt;
-          &lt;li&gt;Function of cost center&lt;/li&gt;
-          &lt;li&gt;Alternative function of cost center&lt;/li&gt;
-          &lt;li&gt;Template for Activity-Independent Formula Planning&lt;/li&gt;
-          &lt;li&gt;Template for Activity-Dependent Formula Planning&lt;/li&gt;
-          &lt;li&gt;Functional Area&lt;/li&gt;
-          &lt;li&gt;Template: Activity-Independent Allocation to Cost Center&lt;/li&gt;
-          &lt;li&gt;Template: Activity-Dependent Allocation to Cost Center&lt;/li&gt;
-          &lt;li&gt;Template: Actual Statistical Key Figure on Cost Center&lt;/li&gt;
-          &lt;li&gt;Template: Act. Stat. Key Figure - Cost Center/Activity Type&lt;/li&gt;
-          &lt;li&gt;Joint venture&lt;/li&gt;
-          &lt;li&gt;Recovery Indicator&lt;/li&gt;
-          &lt;li&gt;Equity type&lt;/li&gt;
-          &lt;li&gt;Joint Venture Object Type&lt;/li&gt;
-          &lt;li&gt;JIB/JIBE Class&lt;/li&gt;
-          &lt;li&gt;JIB/JIBE Subclass A&lt;/li&gt;
-          &lt;li&gt;Append structure for Regulatory Reporting&lt;/li&gt;
-          &lt;li&gt;Regulatory indicator&lt;/li&gt;
-          &lt;li&gt;Client&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;legal Entity&amp;nbsp;&lt;/strong&gt;- Array of objects containing below fields:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Legal Entity Data&lt;/strong&gt;&amp;nbsp;- Objects containing these fields:
+&lt;ul&gt;
+&lt;li&gt;Client&lt;/li&gt;
+&lt;li&gt;Company Code&lt;/li&gt;
+&lt;li&gt;Name of Company Code or Company&lt;/li&gt;
+&lt;li&gt;City&lt;/li&gt;
+&lt;li&gt;Country Key&lt;/li&gt;
+&lt;li&gt;Currency Key&lt;/li&gt;
+&lt;li&gt;Language Key&lt;/li&gt;
+&lt;li&gt;Chart of Accounts&lt;/li&gt;
+&lt;li&gt;Maximum exchange rate deviation in percent&lt;/li&gt;
+&lt;li&gt;Fiscal Year Variant&lt;/li&gt;
+&lt;li&gt;Allocation Indicator&lt;/li&gt;
+&lt;li&gt;Company&lt;/li&gt;
+&lt;li&gt;Address&lt;/li&gt;
+&lt;li&gt;Value added tax registration number&lt;/li&gt;
+&lt;li&gt;Financial Management Area&lt;/li&gt;
+&lt;li&gt;Indicator: Project Cash Management active?&lt;/li&gt;
+&lt;li&gt;Activate Update in Funds Management&lt;/li&gt;
+&lt;li&gt;Jurisdiction for tax calculation - tax jurisdiction code&lt;/li&gt;
+&lt;li&gt;Funds center can be assigned to an account in HR from&lt;/li&gt;
+&lt;li&gt;Company Code Variant (Screen)&lt;/li&gt;
+&lt;li&gt;Cash Management and Forecast Company Code&lt;/li&gt;
+&lt;li&gt;Credit control area&lt;/li&gt;
+&lt;li&gt;Rules for Copying from the Sample Account for G/L Accounts&lt;/li&gt;
+&lt;li&gt;Original Key of the Company Code&lt;/li&gt;
+&lt;li&gt;Chart of Accounts According to Country Legislation&lt;/li&gt;
+&lt;li&gt;Sales/Purchases Tax Group&lt;/li&gt;
+&lt;li&gt;Name of global company code&lt;/li&gt;
+&lt;li&gt;Field Status Variant&lt;/li&gt;
+&lt;li&gt;Posting Period Variant&lt;/li&gt;
+&lt;li&gt;Foreign Currency Translation for Tax Items&lt;/li&gt;
+&lt;li&gt;Workflow variant&lt;/li&gt;
+&lt;li&gt;G/L account authorization check in inventory management&lt;/li&gt;
+&lt;li&gt;G/L account authorization check in PO/scheduling agreement&lt;/li&gt;
+&lt;li&gt;G/L account authorization check in purchase requisitions&lt;/li&gt;
+&lt;li&gt;G/L account authorization check in contracts&lt;/li&gt;
+&lt;li&gt;Input Tax Code for Non-Taxable Transactions&lt;/li&gt;
+&lt;li&gt;Output Tax Code for Non-Taxable Transactions&lt;/li&gt;
+&lt;li&gt;Foreign Trade: Import Data Control in MM Purchase Orders&lt;/li&gt;
+&lt;li&gt;Procedure for Setting the Posting Date&lt;/li&gt;
+&lt;li&gt;Inflation Method&lt;/li&gt;
+&lt;li&gt;Funds reservation field status var.&lt;/li&gt;
+&lt;li&gt;Foreign trade: Import data copying control for GR&lt;/li&gt;
+&lt;li&gt;Method for offsetting account determination&lt;/li&gt;
+&lt;li&gt;Additional settings variant for bus.area financial statemnts&lt;/li&gt;
+&lt;li&gt;Cost of sales accounting status&lt;/li&gt;
+&lt;li&gt;Accounts Receivable Pledging Active&lt;/li&gt;
+&lt;li&gt;Enable Amount Split&lt;/li&gt;
+&lt;li&gt;Surcharge Calculation Method&lt;/li&gt;
+&lt;li&gt;Document Type for Provisions for Taxes on Services Received&lt;/li&gt;
+&lt;li&gt;Document Type for Journal Voucher (Amount Correction)&lt;/li&gt;
+&lt;li&gt;Document Type for Journal Voucher (Tax Code Correction)&lt;/li&gt;
+&lt;li&gt;Document Type for Remittance Challans&lt;/li&gt;
+&lt;li&gt;Deferred Tax Rule&lt;/li&gt;
+&lt;li&gt;Tax Reporting Date Active in Documents&lt;/li&gt;
+&lt;li&gt;Manage Variant of Posting Period for Company Code/Ledger&lt;/li&gt;
+&lt;li&gt;G/L account authorization check in shopping cart&lt;/li&gt;
+&lt;li&gt;Hide Entry in Value Help&lt;/li&gt;
+&lt;li&gt;Activate Account Assignment Derivation in Funds Management&lt;/li&gt;
+&lt;li&gt;Indicator: Cash budget management active&lt;/li&gt;
+&lt;li&gt;Indicator: Cash Management activated?&lt;/li&gt;
+&lt;li&gt;Indicator: Propose current date as value date?&lt;/li&gt;
+&lt;li&gt;Indicator: Discount base amount is the net value&lt;/li&gt;
+&lt;li&gt;Indicator: Base amount for tax is net of discount?&lt;/li&gt;
+&lt;li&gt;Indicator: Business area financial statements required?&lt;/li&gt;
+&lt;li&gt;Indicator: Propose fiscal year?&lt;/li&gt;
+&lt;li&gt;Indicator: Post translations for exchange rate differences?&lt;/li&gt;
+&lt;li&gt;Indicator: Productive company code?&lt;/li&gt;
+&lt;li&gt;Indicator: Purchase Account Processing is Active&lt;/li&gt;
+&lt;li&gt;Indicator: JVA Active&lt;/li&gt;
+&lt;li&gt;Indicator: Financial Assets Management active&lt;/li&gt;
+&lt;li&gt;Indicator: No ex.rate difference when clearing in local crcy&lt;/li&gt;
+&lt;li&gt;Indicator: Updating MM in Cash Mgmt/Forecast activated?&lt;/li&gt;
+&lt;li&gt;Indicator: Updating SD in Cash Mgmt/Forecast activated?&lt;/li&gt;
+&lt;li&gt;Indicator: Company code is in another system&lt;/li&gt;
+&lt;li&gt;Indicator: hedge request active&lt;/li&gt;
+&lt;li&gt;Indicator: Document date as the basis for tax determination&lt;/li&gt;
+&lt;li&gt;Indicator: Negative Postings Permitted&lt;/li&gt;
+&lt;li&gt;Indicator: Can credit control area be overwritten?&lt;/li&gt;
+&lt;li&gt;Indicator: Extended withholding tax active&lt;/li&gt;
+&lt;li&gt;Foreign Trade: Screen ctrl of imp.data f. MM-goods rececipt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Total Rows -&lt;/strong&gt; Return the total number of records present in SAP Payload.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;strong&gt;Action Status&amp;nbsp;&lt;/strong&gt;-&amp;nbsp;Object containing following fields:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Code&lt;/strong&gt;&amp;nbsp;- If the request is executed successfully, code will be set to 0 but if the request failed, code will be set to 1.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Message&lt;/strong&gt;&amp;nbsp;- Reason for error. Populated only when an error occurs.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Total Rows -&lt;/strong&gt; Return the total number of records present in SAP Payload.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Action Status&amp;nbsp;&lt;/strong&gt;-&amp;nbsp;Object containing following fields:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Code&lt;/strong&gt;&amp;nbsp;- If the request is executed successfully, code will be set to 0 but if the request failed, code will be set to 1.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Message&lt;/strong&gt;&amp;nbsp;- Reason for error. Populated only when an error occurs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Requires a subscription for production use. &lt;a href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <internal_name>segregate_legal_entity_response</internal_name>
@@ -1555,20 +1559,20 @@
         <outputs/>
         <parent_action display_value="Segregate Legal Entity Response">11b5b367474f115086887562846d436a</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:13</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c0f9083b47cf115086887562846d4397</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-01 06:24:06</sys_updated_on>
+        <sys_updated_by>Krishna</sys_updated_by>
+        <sys_updated_on>2023-05-08 05:29:42</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1579,11 +1583,11 @@
         <document_key>c0f9083b47cf115086887562846d4397</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:23</sys_created_on>
         <sys_id>22f9483b47cf115086887562846d43c7</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-07 06:13:10</sys_updated_on>
         <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD4af9483b27cf11508a2765f42b0e9d95":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD4af9483b27cf11508a2765f42b0e9d95.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"9a533bff-af67-4fe4-89ee-642c77000ad7\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD4af9483b27cf11508a2765f42b0e9d95\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">d2f9483b47cf115086887562846d439a</variable>
@@ -1593,11 +1597,11 @@
         <document_key>c0f9083b47cf115086887562846d4397</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:23</sys_created_on>
         <sys_id>6ef9483b47cf115086887562846d43c6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:23</sys_updated_on>
         <value>0</value>
         <variable display_value="Don't Treat as Error">1af9483b47cf115086887562846d439f</variable>
@@ -1607,11 +1611,11 @@
         <document_key>c0f9083b47cf115086887562846d4397</document_key>
         <order>4</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-28 06:53:14</sys_created_on>
         <sys_id>ac88246987c4ad10a3e3cbb4dabb359b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2022-12-28 06:53:14</sys_updated_on>
         <value/>
         <variable display_value="Total Rows">6088246987c4ad10a3e3cbb4dabb3588</variable>
@@ -1620,11 +1624,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>legal_entity</field>
         <id>c0f9083b47cf115086887562846d4397</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:23</sys_created_on>
         <sys_id>66f9483b47cf115086887562846d43c6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:23</sys_updated_on>
         <table>var__m_sys_hub_action_output_c0f9083b47cf115086887562846d4397</table>
         <value>{{step[455dde94-66a4-459e-a9be-dfbc8ab07665].legal_entity}}</value>
@@ -1632,11 +1636,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>total_rows</field>
         <id>c0f9083b47cf115086887562846d4397</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-16 12:25:09</sys_created_on>
         <sys_id>81b1254447d7915086887562846d432d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-16 12:25:09</sys_updated_on>
         <table>var__m_sys_hub_action_output_c0f9083b47cf115086887562846d4397</table>
         <value>{{step[455dde94-66a4-459e-a9be-dfbc8ab07665].total_rows}}</value>
@@ -1644,11 +1648,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>__action_status__</field>
         <id>c0f9083b47cf115086887562846d4397</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:23</sys_created_on>
         <sys_id>eaf9483b47cf115086887562846d43c6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:23</sys_updated_on>
         <table>var__m_sys_hub_action_output_c0f9083b47cf115086887562846d4397</table>
         <value/>
@@ -1656,11 +1660,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>__dont_treat_as_error__</field>
         <id>c0f9083b47cf115086887562846d4397</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:23</sys_created_on>
         <sys_id>2af9483b47cf115086887562846d43c6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:23</sys_updated_on>
         <table>var__m_sys_hub_action_output_c0f9083b47cf115086887562846d4397</table>
         <value/>
@@ -1680,12 +1684,12 @@
         <outputs/>
         <section/>
         <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:18</sys_created_on>
         <sys_id>9df9083b47cf115086887562846d43e3</sys_id>
         <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2023-01-03 07:29:54</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9df9083b47cf115086887562846d43e3"/>
@@ -1694,11 +1698,11 @@
         <document_key>9df9083b47cf115086887562846d43e3</document_key>
         <order>600</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:21</sys_created_on>
         <sys_id>8ef9483b47cf115086887562846d432d</sys_id>
         <sys_mod_count>7</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2023-01-03 07:29:54</sys_updated_on>
         <value>(function execute(inputs, outputs) {
     var input_json = inputs.json_string;
@@ -1714,11 +1718,11 @@
         <document_key>9df9083b47cf115086887562846d43e3</document_key>
         <order>400</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:21</sys_created_on>
         <sys_id>c6f9483b47cf115086887562846d432d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:21</sys_updated_on>
         <value>35aa573fd7802200bdbaee5b5e610375</value>
         <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
@@ -1727,11 +1731,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>delimiter</field>
         <id>9df9083b47cf115086887562846d43e3</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:21</sys_created_on>
         <sys_id>cef9483b47cf115086887562846d432e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:21</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_9df9083b47cf115086887562846d43e3</table>
         <value>{{action.delimiter}}</value>
@@ -1739,11 +1743,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>json</field>
         <id>9df9083b47cf115086887562846d43e3</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:21</sys_created_on>
         <sys_id>0ef9483b47cf115086887562846d432e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:21</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_9df9083b47cf115086887562846d43e3</table>
         <value>{{action.json_string}}</value>
@@ -1751,11 +1755,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>json_string</field>
         <id>9df9083b47cf115086887562846d43e3</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-01-03 07:29:54</sys_created_on>
         <sys_id>547ae3df87c02550a3e3cbb4dabb3543</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2023-01-03 07:29:54</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_9df9083b47cf115086887562846d43e3</table>
         <value>{{action.json_string}}</value>
@@ -1823,7 +1827,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-01-03 07:29:53</sys_created_on>
         <sys_id>3b6ae3df87c02550a3e3cbb4dabb3521</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1832,7 +1836,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2023-01-03 07:29:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1906,7 +1910,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:19</sys_created_on>
         <sys_id>e5f9483b47cf115086887562846d4311</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1915,7 +1919,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:19</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -1990,7 +1994,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:20</sys_created_on>
         <sys_id>3df9483b47cf115086887562846d4324</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1999,7 +2003,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:20</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2073,7 +2077,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-16 12:21:58</sys_created_on>
         <sys_id>e2f0250447d7915086887562846d43ee</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2082,7 +2086,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-16 12:21:58</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2107,7 +2111,7 @@
         <name>var__m_sys_hub_step_ext_output_9df9083b47cf115086887562846d43e3</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-16 12:21:58</sys_created_on>
         <sys_id>66f0250447d7915086887562846d43f1</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2116,7 +2120,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-16 12:21:58</sys_updated_on>
         <url/>
         <url_target/>
@@ -2130,7 +2134,7 @@
         <name>var__m_sys_hub_step_ext_output_9df9083b47cf115086887562846d43e3</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:20</sys_created_on>
         <sys_id>bdf9483b47cf115086887562846d4328</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2139,7 +2143,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:20</sys_updated_on>
         <url/>
         <url_target/>
@@ -2205,7 +2209,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:18</sys_created_on>
         <sys_id>55f9083b47cf115086887562846d43de</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2214,7 +2218,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:18</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2289,7 +2293,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:16</sys_created_on>
         <sys_id>b8f9083b47cf115086887562846d439a</sys_id>
         <sys_mod_count>1</sys_mod_count>
@@ -2298,7 +2302,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2023-01-03 07:29:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2376,7 +2380,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:22</sys_created_on>
         <sys_id>1af9483b47cf115086887562846d439f</sys_id>
         <sys_mod_count>1</sys_mod_count>
@@ -2385,7 +2389,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2463,7 +2467,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-28 06:53:14</sys_created_on>
         <sys_id>6088246987c4ad10a3e3cbb4dabb3588</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2472,7 +2476,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2022-12-28 06:53:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2550,7 +2554,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:23</sys_created_on>
         <sys_id>6af9483b47cf115086887562846d43a6</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2559,7 +2563,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2637,7 +2641,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:22</sys_created_on>
         <sys_id>d2f9483b47cf115086887562846d439a</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2646,7 +2650,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:22</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2666,14 +2670,14 @@
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=c0f9083b47cf115086887562846d4397^sys_idNOT INe2f9483b47cf115086887562846d43c9"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
         <action_type_id display_value="Segregate Legal Entity Response">c0f9083b47cf115086887562846d4397</action_type_id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:24</sys_created_on>
         <sys_id>e2f9483b47cf115086887562846d43c9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:24</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=e2f9483b47cf115086887562846d43c9^sys_idNOT INb6f6cf958366611067a211b6feaad306"/>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=e2f9483b47cf115086887562846d43c9^sys_idNOT IN46ad3eefc32625108e4f2a1ad00131cb"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2022-11-15 03:23:24">e2f9483b47cf115086887562846d43c9</action_status_metadata_id>
         <condition>{{step[455dde94-66a4-459e-a9be-dfbc8ab07665].__step_status__.code}}!=0</condition>
@@ -2681,12 +2685,12 @@
         <label>Segregate Legal Entity step fails</label>
         <order>1</order>
         <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{\\\"code\\\":\\\"{{step[455dde94-66a4-459e-a9be-dfbc8ab07665].__step_status__.code}}\\\"}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[455dde94-66a4-459e-a9be-dfbc8ab07665].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-05-01 06:24:07</sys_created_on>
-        <sys_id>b6f6cf958366611067a211b6feaad306</sys_id>
+        <sys_created_by>Krishna</sys_created_by>
+        <sys_created_on>2023-05-08 05:29:42</sys_created_on>
+        <sys_id>46ad3eefc32625108e4f2a1ad00131cb</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-01 06:24:07</sys_updated_on>
+        <sys_updated_by>Krishna</sys_updated_by>
+        <sys_updated_on>2023-05-08 05:29:42</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_c0f9083b47cf115086887562846d4397^sys_idNOT IN85f9083b47cf115086887562846d43dd,9df9083b47cf115086887562846d43e1"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -2698,7 +2702,7 @@
         <name>var__m_sys_hub_action_input_c0f9083b47cf115086887562846d4397</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:17</sys_created_on>
         <sys_id>85f9083b47cf115086887562846d43dd</sys_id>
         <sys_mod_count>1</sys_mod_count>
@@ -2707,7 +2711,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2023-01-03 07:29:53</sys_updated_on>
         <url/>
         <url_target/>
@@ -2721,7 +2725,7 @@
         <name>var__m_sys_hub_action_input_c0f9083b47cf115086887562846d4397</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:18</sys_created_on>
         <sys_id>9df9083b47cf115086887562846d43e1</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2730,7 +2734,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:18</sys_updated_on>
         <url/>
         <url_target/>
@@ -2746,7 +2750,7 @@
         <name>var__m_sys_hub_action_output_c0f9083b47cf115086887562846d4397</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:22</sys_created_on>
         <sys_id>5af9483b47cf115086887562846d439e</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2755,7 +2759,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:22</sys_updated_on>
         <url/>
         <url_target/>
@@ -2769,7 +2773,7 @@
         <name>var__m_sys_hub_action_output_c0f9083b47cf115086887562846d4397</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-28 06:53:14</sys_created_on>
         <sys_id>6c88246987c4ad10a3e3cbb4dabb358b</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2778,7 +2782,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2022-12-28 06:53:14</sys_updated_on>
         <url/>
         <url_target/>
@@ -2792,7 +2796,7 @@
         <name>var__m_sys_hub_action_output_c0f9083b47cf115086887562846d4397</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:23</sys_created_on>
         <sys_id>aaf9483b47cf115086887562846d43a5</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2801,7 +2805,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:23</sys_updated_on>
         <url/>
         <url_target/>
@@ -2815,7 +2819,7 @@
         <name>var__m_sys_hub_action_output_c0f9083b47cf115086887562846d4397</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 11:23:23</sys_created_on>
         <sys_id>eaf9483b47cf115086887562846d43aa</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -2824,7 +2828,7 @@
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>akash</sys_updated_by>
         <sys_updated_on>2022-11-15 11:23:23</sys_updated_on>
         <url/>
         <url_target/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="124e3d79c3d1e11068187addd4013195" extends="sys_import_set_row" label="Legal Entities" name="sn_sap_data_int_le_stg" type="collection">
+    <element db_object_id="124e3d79c3d1e11068187addd4013195" extends="sys_import_set_row" label="Legal Entities" max_length="40" name="sn_sap_data_int_le_stg" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Accounts receivable pledging active" max_length="40" name="accounts_receivable_pledging_active" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Activate account assignment derivation in funds management" max_length="40" name="activate_account_assignment_derivation_in_funds_management" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Activate update in funds management" max_length="40" name="activate_update_in_funds_management" type="string"/>
@@ -33,10 +33,10 @@
         <element attributes="edge_encryption_enabled=true" label="Foreign trade import data copying control for goods receipt" max_length="40" name="foreign_trade_import_data_copying_control_for_gr" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Foreign trade screen control of important data material movement goods receipt" max_length="40" name="foreign_trade_screen_ctrl_of_imp_data_f_mm_goods_rececipt" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Funds center can be assigned to an account in human resource from" max_length="40" name="funds_center_can_be_assigned_to_an_account_in_hr_from" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Funds reservation field status var" max_length="40" name="funds_reservation_field_status_var" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Funds reservation field status" max_length="40" name="funds_reservation_field_status_var" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="General ledger account authorization check in contracts" max_length="40" name="g_l_account_authorization_check_in_contracts" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="General ledger account authorization check in inventory management" max_length="40" name="g_l_account_authorization_check_in_inventory_management" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="General ledger account authorization check in po scheduling agreement" max_length="40" name="g_l_account_authorization_check_in_po_scheduling_agreement" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="General ledger account authorization check in purchaseorder scheduling agreement" max_length="40" name="g_l_account_authorization_check_in_po_scheduling_agreement" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="General ledger account authorization check in purchase requisitions" max_length="40" name="g_l_account_authorization_check_in_purchase_requisitions" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="General ledger account authorization check in shopping cart" max_length="40" name="g_l_account_authorization_check_in_shopping_cart" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Hide entry in value help" max_length="40" name="hide_entry_in_value_help" type="string"/>
@@ -53,7 +53,7 @@
         <element attributes="edge_encryption_enabled=true" label="Indicator hedge request active" max_length="40" name="indicator_hedge_request_active" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Indicator joint venture accounting active" max_length="40" name="indicator_jva_active" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Indicator negative postings permitted" max_length="40" name="indicator_negative_postings_permitted" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Indicator number exchange rate difference when clearing in local crcy" max_length="40" name="indicator_no_ex_rate_difference_when_clearing_in_local_crcy" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Indicator number exchange rate difference when clearing in local currency" max_length="40" name="indicator_no_ex_rate_difference_when_clearing_in_local_crcy" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Indicator post translations for exchange rate differences" max_length="40" name="indicator_post_translations_for_exchange_rate_differences" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Indicator productive company code" max_length="40" name="indicator_productive_company_code" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Indicator project cash management active" max_length="40" name="indicator_project_cash_management_active" type="string"/>
@@ -75,7 +75,7 @@
         <element attributes="edge_encryption_enabled=true" label="Output tax code for non taxable transactions" max_length="40" name="output_tax_code_for_non_taxable_transactions" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Posting period variant" max_length="40" name="posting_period_variant" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Procedure for setting the posting date" max_length="40" name="procedure_for_setting_the_posting_date" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Rules for copying from the sample account for g l accounts" max_length="40" name="rules_for_copying_from_the_sample_account_for_g_l_accounts" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Rules for copying from the sample account for general ledger accounts" max_length="40" name="rules_for_copying_from_the_sample_account_for_g_l_accounts" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Sales purchases tax group" max_length="40" name="sales_purchases_tax_group" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Surcharge calculation method" max_length="40" name="surcharge_calculation_method" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Tax reporting date active in documents" max_length="40" name="tax_reporting_date_active_in_documents" type="string"/>

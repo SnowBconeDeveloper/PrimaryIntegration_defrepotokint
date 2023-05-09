@@ -5,19 +5,19 @@
         <flow display_value="Fetch Legal Entities from SAP ECC">2b619fd0472add1086887562846d437e</flow>
         <import_set_tables>sn_sap_data_int_le_stg</import_set_tables>
         <name>Legal Entity</name>
-        <order>50</order>
+        <order>20</order>
         <properties>{"query":""}</properties>
         <sys_class_name>sn_sap_data_int_integrations_service</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-03-05 07:23:11</sys_created_on>
         <sys_id>fcc1350fc315e11031c77addd40131b6</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>Legal Entity</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name>sn_sap_data_int_integrations_service_fcc1350fc315e11031c77addd40131b6</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-30 10:31:48</sys_updated_on>
+        <sys_updated_by>Mayank</sys_updated_by>
+        <sys_updated_on>2023-05-08 12:42:08</sys_updated_on>
     </sn_sap_data_int_integrations_service>
 </record_update>
