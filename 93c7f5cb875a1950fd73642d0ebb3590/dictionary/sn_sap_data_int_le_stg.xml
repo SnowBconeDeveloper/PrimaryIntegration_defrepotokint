@@ -36,7 +36,7 @@
         <element attributes="edge_encryption_enabled=true" label="Funds reservation field status" max_length="40" name="funds_reservation_field_status_var" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="General ledger account authorization check in contracts" max_length="40" name="g_l_account_authorization_check_in_contracts" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="General ledger account authorization check in inventory management" max_length="40" name="g_l_account_authorization_check_in_inventory_management" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="General ledger account authorization check in purchaseorder scheduling agreement" max_length="40" name="g_l_account_authorization_check_in_po_scheduling_agreement" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Ledger account authorization check in purchase order scheduling agreement" max_length="40" name="g_l_account_authorization_check_in_po_scheduling_agreement" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="General ledger account authorization check in purchase requisitions" max_length="40" name="g_l_account_authorization_check_in_purchase_requisitions" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="General ledger account authorization check in shopping cart" max_length="40" name="g_l_account_authorization_check_in_shopping_cart" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Hide entry in value help" max_length="40" name="hide_entry_in_value_help" type="string"/>
