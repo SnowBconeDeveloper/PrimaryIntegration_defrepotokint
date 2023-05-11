@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c5350e0d8346a11067a211b6feaad33a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Parallel Processor Job for FX Rates from SAP ECC</sys_name>
         <sys_overrides/>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name>sys_hub_flow_c5350e0d8346a11067a211b6feaad33a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 07:56:37</sys_updated_on>
+        <sys_updated_on>2023-05-11 14:36:11</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=c5350e0d8346a11067a211b6feaad33a"/>
@@ -2809,11 +2809,11 @@ INCREASE COMPLETE COUNT</value>
         <sys_created_on>2023-04-05 10:26:57</sys_created_on>
         <sys_id>2e350e0d8346a11067a211b6feaad3ac</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Connection &amp; Credential Alias</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_c5350e0d8346a11067a211b6feaad33a_connection_credential_alias_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-05 10:26:57</sys_updated_on>
         <url/>
@@ -2832,11 +2832,11 @@ INCREASE COMPLETE COUNT</value>
         <sys_created_on>2023-04-05 10:26:59</sys_created_on>
         <sys_id>47350e0d8346a11067a211b6feaad3b6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Range</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_c5350e0d8346a11067a211b6feaad33a_range_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-05 10:26:59</sys_updated_on>
         <url/>
@@ -2855,11 +2855,11 @@ INCREASE COMPLETE COUNT</value>
         <sys_created_on>2023-04-05 10:26:58</sys_created_on>
         <sys_id>6e350e0d8346a11067a211b6feaad3b0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Service Record</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_c5350e0d8346a11067a211b6feaad33a_service_record_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-05 10:26:58</sys_updated_on>
         <url/>
@@ -2878,11 +2878,11 @@ INCREASE COMPLETE COUNT</value>
         <sys_created_on>2023-04-05 10:26:58</sys_created_on>
         <sys_id>7a350e0d8346a11067a211b6feaad3b3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Row Count</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_c5350e0d8346a11067a211b6feaad33a_row_count_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-05 10:26:58</sys_updated_on>
         <url/>
@@ -2901,11 +2901,11 @@ INCREASE COMPLETE COUNT</value>
         <sys_created_on>2023-04-05 10:26:59</sys_created_on>
         <sys_id>cb350e0d8346a11067a211b6feaad3ea</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>ERP Source ID</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_c5350e0d8346a11067a211b6feaad33a_erp_source_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-05 10:26:59</sys_updated_on>
         <url/>
@@ -2926,11 +2926,11 @@ INCREASE COMPLETE COUNT</value>
         <sys_created_on>2023-04-05 10:27:02</sys_created_on>
         <sys_id>a3354e0d8346a11067a211b6feaad31d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Error Message</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_c5350e0d8346a11067a211b6feaad33a_error_message_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-05 10:27:02</sys_updated_on>
         <url/>
@@ -2949,11 +2949,11 @@ INCREASE COMPLETE COUNT</value>
         <sys_created_on>2023-04-05 10:27:01</sys_created_on>
         <sys_id>d3350e0d8346a11067a211b6feaad3f5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Status</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_c5350e0d8346a11067a211b6feaad33a_status_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-05 10:27:01</sys_updated_on>
         <url/>
@@ -5827,11 +5827,11 @@ INCREASE COMPLETE COUNT</value>
         <sys_created_on>2023-04-05 11:18:49</sys_created_on>
         <sys_id>0a1152898386a11067a211b6feaad3c8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>ERP Source ID</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9bb09a498386a11067a211b6feaad3f5_erp_source_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-05 11:18:49</sys_updated_on>
         <url/>
@@ -5850,11 +5850,11 @@ INCREASE COMPLETE COUNT</value>
         <sys_created_on>2023-04-05 11:18:43</sys_created_on>
         <sys_id>301152898386a11067a211b6feaad337</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Connection &amp; Credential Alias</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9bb09a498386a11067a211b6feaad3f5_connection_credential_alias_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-05 11:18:43</sys_updated_on>
         <url/>
@@ -5873,11 +5873,11 @@ INCREASE COMPLETE COUNT</value>
         <sys_created_on>2023-04-05 11:18:44</sys_created_on>
         <sys_id>8d1152898386a11067a211b6feaad398</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Service Record</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9bb09a498386a11067a211b6feaad3f5_service_record_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-05 11:18:44</sys_updated_on>
         <url/>
@@ -5896,11 +5896,11 @@ INCREASE COMPLETE COUNT</value>
         <sys_created_on>2023-04-05 11:18:45</sys_created_on>
         <sys_id>9d1152898386a11067a211b6feaad3ac</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Row Count</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9bb09a498386a11067a211b6feaad3f5_row_count_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-05 11:18:45</sys_updated_on>
         <url/>
@@ -5919,11 +5919,11 @@ INCREASE COMPLETE COUNT</value>
         <sys_created_on>2023-04-05 11:18:47</sys_created_on>
         <sys_id>f51152898386a11067a211b6feaad3b4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Range</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9bb09a498386a11067a211b6feaad3f5_range_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-05 11:18:47</sys_updated_on>
         <url/>
@@ -5944,11 +5944,11 @@ INCREASE COMPLETE COUNT</value>
         <sys_created_on>2023-04-05 11:18:51</sys_created_on>
         <sys_id>b61152898386a11067a211b6feaad3f2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Status</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_9bb09a498386a11067a211b6feaad3f5_status_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-05 11:18:51</sys_updated_on>
         <url/>
@@ -5967,11 +5967,11 @@ INCREASE COMPLETE COUNT</value>
         <sys_created_on>2023-04-05 11:18:54</sys_created_on>
         <sys_id>e31192898386a11067a211b6feaad315</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Error Message</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_9bb09a498386a11067a211b6feaad3f5_error_message_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-05 11:18:54</sys_updated_on>
         <url/>
