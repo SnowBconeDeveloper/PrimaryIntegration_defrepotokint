@@ -10,7 +10,7 @@
         <script><![CDATA[var IntegrationsUtilsSNC = Class.create();
 IntegrationsUtilsSNC.prototype = {
     initialize: function() {},
- 
+
     createJobTracker: function(source, jobName) {
         var trackerGr = new GlideRecord('sn_sap_data_int_integration_job_tracker');
         trackerGr.job_name = jobName;
@@ -45,7 +45,7 @@ IntegrationsUtilsSNC.prototype = {
         serviceTrackerGr.query();
         if (!serviceTrackerGr.next())
             return '';
-        return serviceTrackerGr.getDisplayValue('integrations_job_tracker.job_start_time') ;
+        return serviceTrackerGr.getDisplayValue('integrations_job_tracker.job_start_time');
     },
 
     transformImportSet: function(importSetId) {
@@ -196,18 +196,18 @@ IntegrationsUtilsSNC.prototype = {
         return location_name;
     },
 
-   checkForSupplierLocation: function(supplierID){
-		var gr_supp = new GlideAggregate('sn_supplier_m2m_location');
-		gr_supp.addQuery('supplier', supplierID);
-		gr_supp.addQuery('is_headquarters', true);
-		gr_supp.query();
-		if (gr_supp.next())
-			return true;
-		else 
-			return false;
-	},
-	
-	updateLocation: function(location_id, location_details) {
+    checkForSupplierLocation: function(supplierID) {
+        var gr_supp = new GlideAggregate('sn_supplier_m2m_location');
+        gr_supp.addQuery('supplier', supplierID);
+        gr_supp.addQuery('is_headquarters', true);
+        gr_supp.query();
+        if (gr_supp.next())
+            return true;
+        else
+            return false;
+    },
+
+    updateLocation: function(location_id, location_details) {
         var gr_loc = new GlideRecord('cmn_location');
         gr_loc.addQuery('sys_id', location_id);
         gr_loc.query();
@@ -220,53 +220,57 @@ IntegrationsUtilsSNC.prototype = {
             gr_loc.name = location_details.name;
             gr_loc.fax_phone = location_details.fax_phone;
             gr_loc.phone = location_details.phone;
-            gr_loc.update();
+            try {
+                gr_loc.update();
+            } catch (e) {
+                gs.error("Error while updating the location id " + location_id);
+            }
         }
     },
-	
-	getLocationID: function(location_details){
-		var gr_location = new GlideAggregate('cmn_location');
-		gr_location.addQuery('street', location_details.street);
-		gr_location.addQuery('city', location_details.city);
-		gr_location.addQuery('state', location_details.state);
-		gr_location.addQuery('zip', location_details.zip);
-		gr_location.addQuery('country', location_details.country);
-		gr_location.query();
-		if (gr_location.next()) {
-			return gr_location.getUniqueValue();
-		} else {
-			return null;
-		}
-	},
-	
-	createLocation: function(location_details){
-		var loc = new GlideRecord('cmn_location');
-		loc.initialize();
-		loc.street = location_details.street;
-		loc.city = location_details.city;
-		loc.state = location_details.state;
-		loc.zip = location_details.zip;
-		loc.country = location_details.country;
-		loc.name = location_details.name;
-		loc.fax_phone = location_details.fax_phone;
-		loc.phone = location_details.phone;
-		loc.insert();
-		return loc;
-	},
-	
-	createSupplierLocation: function(supSysId, locSysId) {
-		if (!gs.nil(locSysId) || !gs.nil(supSysId)) {
-			var supp_loc = new GlideRecord('sn_supplier_m2m_location');
-			supp_loc.initialize();
-			supp_loc.location = locSysId;
-			supp_loc.supplier = supSysId;
-			supp_loc.is_headquarters = true;
-			supp_loc.insert();
-			return supp_loc;
-		} else {
-			throw "Mandatory field(s) Suppier or Location cannot be blank.";
-		}
-	},
+
+    getLocationID: function(location_details) {
+        var gr_location = new GlideAggregate('cmn_location');
+        gr_location.addQuery('street', location_details.street);
+        gr_location.addQuery('city', location_details.city);
+        gr_location.addQuery('state', location_details.state);
+        gr_location.addQuery('zip', location_details.zip);
+        gr_location.addQuery('country', location_details.country);
+        gr_location.query();
+        if (gr_location.next()) {
+            return gr_location.getUniqueValue();
+        } else {
+            return null;
+        }
+    },
+
+    createLocation: function(location_details) {
+        var loc = new GlideRecord('cmn_location');
+        loc.initialize();
+        loc.street = location_details.street;
+        loc.city = location_details.city;
+        loc.state = location_details.state;
+        loc.zip = location_details.zip;
+        loc.country = location_details.country;
+        loc.name = location_details.name;
+        loc.fax_phone = location_details.fax_phone;
+        loc.phone = location_details.phone;
+        loc.insert();
+        return loc;
+    },
+
+    createSupplierLocation: function(supSysId, locSysId) {
+        if (!gs.nil(locSysId) || !gs.nil(supSysId)) {
+            var supp_loc = new GlideRecord('sn_supplier_m2m_location');
+            supp_loc.initialize();
+            supp_loc.location = locSysId;
+            supp_loc.supplier = supSysId;
+            supp_loc.is_headquarters = true;
+            supp_loc.insert();
+            return supp_loc;
+        } else {
+            throw "Mandatory field(s) Suppier or Location cannot be blank.";
+        }
+    },
 
     increaseCount: function(recordSysId) {
         var batchCountResumeCounter = 0,
@@ -315,13 +319,13 @@ IntegrationsUtilsSNC.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-12 08:49:37</sys_created_on>
         <sys_id>e2b020f087aadd50fd73642d0ebb3583</sys_id>
-        <sys_mod_count>73</sys_mod_count>
+        <sys_mod_count>75</sys_mod_count>
         <sys_name> IntegrationsUtilsSNC</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name>sys_script_include_e2b020f087aadd50fd73642d0ebb3583</sys_update_name>
-        <sys_updated_by>Mayank</sys_updated_by>
-        <sys_updated_on>2023-05-09 08:54:57</sys_updated_on>
+        <sys_updated_by>Prama</sys_updated_by>
+        <sys_updated_on>2023-05-12 05:07:55</sys_updated_on>
     </sys_script_include>
 </record_update>
