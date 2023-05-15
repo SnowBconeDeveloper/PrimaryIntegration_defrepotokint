@@ -220,9 +220,7 @@ IntegrationsUtilsSNC.prototype = {
             gr_loc.name = location_details.name;
             gr_loc.fax_phone = location_details.fax_phone;
             gr_loc.phone = location_details.phone;
-            try {
-                gr_loc.update();
-            } catch (e) {
+            if (gr_loc.update() == null) {
                 gs.error("Error while updating the location id " + location_id);
             }
         }
@@ -254,8 +252,11 @@ IntegrationsUtilsSNC.prototype = {
         loc.name = location_details.name;
         loc.fax_phone = location_details.fax_phone;
         loc.phone = location_details.phone;
-        loc.insert();
-        return loc;
+        if (loc.insert() != null) {
+            return loc;
+        } else {
+            gs.error("Error occurred while creating the location");
+        }
     },
 
     createSupplierLocation: function(supSysId, locSysId) {
@@ -271,6 +272,20 @@ IntegrationsUtilsSNC.prototype = {
             throw "Mandatory field(s) Suppier or Location cannot be blank.";
         }
     },
+
+    updateSupplierLocation: function(supSysId, locSysId) {
+        var supp_loc = new GlideRecord('sn_supplier_m2m_location');
+        supp_loc.addQuery('supplier', supSysId);
+        supp_loc.addQuery('is_headquarters', true);
+        supp_loc.query();
+        if (supp_loc.next()) {
+            supp_loc.location = locSysId;
+            if (supp_loc.update() == null) {
+                gs.error("Error occurred while updating the sn_supplier_m2m_location");
+            }
+        }
+    },
+
 
     increaseCount: function(recordSysId) {
         var batchCountResumeCounter = 0,
@@ -319,13 +334,13 @@ IntegrationsUtilsSNC.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-12 08:49:37</sys_created_on>
         <sys_id>e2b020f087aadd50fd73642d0ebb3583</sys_id>
-        <sys_mod_count>75</sys_mod_count>
+        <sys_mod_count>85</sys_mod_count>
         <sys_name> IntegrationsUtilsSNC</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name>sys_script_include_e2b020f087aadd50fd73642d0ebb3583</sys_update_name>
         <sys_updated_by>Prama</sys_updated_by>
-        <sys_updated_on>2023-05-12 05:07:55</sys_updated_on>
+        <sys_updated_on>2023-05-15 08:47:52</sys_updated_on>
     </sys_script_include>
 </record_update>
