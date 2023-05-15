@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="e05e7d79c3d1e11068187addd4013197" extends="sys_import_set_row" label="Cost Centers" name="sn_sap_data_int_cc_stg" type="collection">
+    <element db_object_id="e05e7d79c3d1e11068187addd4013197" extends="sys_import_set_row" label="Cost Centers" max_length="40" name="sn_sap_data_int_cc_stg" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Alternative function of cost center" max_length="40" name="alternative_function_of_cost_center" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Append structure for regulatory reporting" max_length="40" name="append_structure_for_regulatory_reporting" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Application" max_length="40" name="application" type="string"/>
