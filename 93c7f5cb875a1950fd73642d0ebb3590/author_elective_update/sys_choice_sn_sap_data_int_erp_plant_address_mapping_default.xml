@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="default" table="sn_sap_data_int_erp_plant_address_mapping" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>default</element>
+            <name>sn_sap_data_int_erp_plant_address_mapping</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>shreenag.araga@snc</sys_created_by>
+            <sys_created_on>2023-05-17 11:22:58</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>default</sys_name>
+            <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name>sys_choice_sn_sap_data_int_erp_plant_address_mapping_default</sys_update_name>
+            <sys_updated_by>shreenag.araga@snc</sys_updated_by>
+            <sys_updated_on>2023-05-17 11:22:58</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>default</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>True</label>
+            <language>en</language>
+            <name>sn_sap_data_int_erp_plant_address_mapping</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>shreenag.araga@snc</sys_created_by>
+            <sys_created_on>2023-05-17 11:22:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9ec4e2aec33e6d10da89011ad00131f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>shreenag.araga@snc</sys_updated_by>
+            <sys_updated_on>2023-05-17 11:22:58</sys_updated_on>
+            <value>true</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>default</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>False</label>
+            <language>en</language>
+            <name>sn_sap_data_int_erp_plant_address_mapping</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>shreenag.araga@snc</sys_created_by>
+            <sys_created_on>2023-05-17 11:23:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a1d4e2aec33e6d10da89011ad00131aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>shreenag.araga@snc</sys_updated_by>
+            <sys_updated_on>2023-05-17 11:23:09</sys_updated_on>
+            <value>false</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

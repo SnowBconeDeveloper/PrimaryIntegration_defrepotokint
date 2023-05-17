@@ -32,9 +32,8 @@
         legalEntity = "";
 
     if (!gs.nil(legalEntity)) {
-		var query = "legal_entity.sys_id=" + legalEntity.toString();
+		var query = "name=" + name.toString() + "^legal_entity.sys_id=" + legalEntity.toString();
         var gr = new GlideRecord("sn_shop_office_location");
-        gr.addQuery("name", name.toString());
         gr.addEncodedQuery(query);
         gr.query();
         if (gr.next()) {
@@ -54,14 +53,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-12-06 08:49:55</sys_created_on>
         <sys_id>73203fda472f1910cb762430a46d43fd</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>[Script]</sys_name>
         <sys_package display_value="Primary Data Integration with SAP" source="sn_sap_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration with SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name>sys_transform_entry_73203fda472f1910cb762430a46d43fd</sys_update_name>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-16 18:13:06</sys_updated_on>
+        <sys_updated_on>2023-05-17 11:29:04</sys_updated_on>
         <target_field>location</target_field>
         <target_table>sn_sap_data_int_erp_plant_address_mapping</target_table>
         <use_source_script>true</use_source_script>
