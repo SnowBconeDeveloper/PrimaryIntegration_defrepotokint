@@ -17,7 +17,6 @@
         <element attributes="edge_encryption_enabled=true" label="Controlling cost center accounting overhead key" max_length="40" name="co_cca_overhead_key" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Created on" max_length="40" name="created_on" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Currency key" max_length="40" name="currency_key" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Data communication line number" max_length="40" name="data_communication_line_no" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Data communication line number" max_length="40" name="data_communication_line_number" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Department" max_length="40" name="department" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="District" max_length="40" name="district" type="string"/>
@@ -54,10 +53,8 @@
         <element attributes="edge_encryption_enabled=true" label="Postal code" max_length="40" name="postal_code" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Post office box" max_length="40" name="post_office_box" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Post office box postal code" max_length="40" name="post_office_box_postal_code" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Post office box" max_length="40" name="po_box" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Printer destination for cost centre report" max_length="40" name="printer_destination_for_cctr_report" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Profit center" max_length="40" name="profit_center" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Post office Box postal code" max_length="40" name="p_o_box_postal_code" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Recovery indicator" max_length="40" name="recovery_indicator" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Region state province county" max_length="40" name="region_state_province_county" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Regulatory indicator" max_length="40" name="regulatory_indicator" type="string"/>
